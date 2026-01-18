@@ -16,6 +16,11 @@ public class LoginManager {
     private static final String SHARED_PREFERENCES_STRING_JSON_USER_ACCOUNT_LIST = "SHARED_PREFERENCES_STRING_JSON_USER_ACCOUNT_LIST";
     private static final String SHARED_PREFERENCES_STRING_JSON_USER_PASSWORD_LIST = "SHARED_PREFERENCES_STRING_JSON_USER_PASSWORD_LIST";
     private static final String SHARED_PREFERENCES_STRING_LAST_MODIFIED_DATE = "SHARED_PREFERENCES_STRING_LAST_MODIFIED_DATE";
+    private static final String SHARED_PREFERENCES_STRING_LAST_USER_ID = "SHARED_PREFERENCES_STRING_LAST_USER_ID";
+    private static final String SHARED_PREFERENCES_STRING_LAST_PASSWORD = "SHARED_PREFERENCES_STRING_LAST_PASSWORD";
+    private static final String SHARED_PREFERENCES_STRING_LAST_ACCOUNT_UUID = "SHARED_PREFERENCES_STRING_LAST_ACCOUNT_UUID";
+    private static final String SHARED_PREFERENCES_STRING_LAST_BEACON_UUID = "SHARED_PREFERENCES_STRING_LAST_BEACON_UUID";
+    private static final String SHARED_PREFERENCES_STRING_LAST_QUERY_UUID = "SHARED_PREFERENCES_STRING_LAST_QUERY_UUID";
 
     private static final String SHARED_PREFERENCES_BOOLEAN_FAST_SETTING = "SHARED_PREFERENCES_BOOLEAN_FAST_SETTING";
     private static final String SHARED_PREFERENCES_BOOLEAN_AES_SETTING = "SHARED_PREFERENCES_BOOLEAN_AES_SETTING";
@@ -55,6 +60,51 @@ public class LoginManager {
     public void setAccountDataString(String accountDataString) { // 登入成功後, 將 server 給的 json 儲存在本地
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(SHARED_PREFERENCES_STRING_JSON_ACCOUNT_DATA, accountDataString);
+        editor.commit();
+    }
+
+    public void setAccountDataEntity(AccountDataEntity accountDataEntity) {
+        if (accountDataEntity == null) {
+            return;
+        }
+        setAccountDataString(GsonUtil.toJson(accountDataEntity));
+    }
+
+    public void setAccountDataStringWithCredentials(String accountDataString, String account, String password) {
+        AccountDataEntity baseEntity = AccountDataEntity.fromCredentials(account, password);
+        AccountDataEntity responseEntity = null;
+        if (!StringUtil.isEmpty(accountDataString)) {
+            responseEntity = GsonUtil.generateGenericData(accountDataString, AccountDataEntity.class);
+        }
+        if (responseEntity == null) {
+            setAccountDataEntity(baseEntity);
+            return;
+        }
+        responseEntity.setAccessUUID(baseEntity.getAccessUUID());
+        responseEntity.setBeaconUUID(baseEntity.getBeaconUUID());
+        if (StringUtil.isEmpty(responseEntity.getQueryUUID())) {
+            responseEntity.setQueryUUID(baseEntity.getQueryUUID());
+        }
+        setAccountDataEntity(responseEntity);
+        persistPlainTextCredentials(account, password, responseEntity);
+    }
+
+    public void persistPlainTextCredentials(String account, String password, AccountDataEntity accountDataEntity) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(SHARED_PREFERENCES_STRING_LAST_USER_ID, account == null ? "" : account);
+        editor.putString(SHARED_PREFERENCES_STRING_LAST_PASSWORD, password == null ? "" : password);
+        if (accountDataEntity != null) {
+            editor.putString(SHARED_PREFERENCES_STRING_LAST_ACCOUNT_UUID,
+                    accountDataEntity.getAccessUUID() == null ? "" : accountDataEntity.getAccessUUID());
+            editor.putString(SHARED_PREFERENCES_STRING_LAST_BEACON_UUID,
+                    accountDataEntity.getBeaconUUID() == null ? "" : accountDataEntity.getBeaconUUID());
+            editor.putString(SHARED_PREFERENCES_STRING_LAST_QUERY_UUID,
+                    accountDataEntity.getQueryUUID() == null ? "" : accountDataEntity.getQueryUUID());
+        } else {
+            editor.putString(SHARED_PREFERENCES_STRING_LAST_ACCOUNT_UUID, "");
+            editor.putString(SHARED_PREFERENCES_STRING_LAST_BEACON_UUID, "");
+            editor.putString(SHARED_PREFERENCES_STRING_LAST_QUERY_UUID, "");
+        }
         editor.commit();
     }
 
@@ -198,5 +248,6 @@ public class LoginManager {
         setBroadcastFrequency("");
         setRestTime("");
         setRestBroadcastFrequency("");
+        persistPlainTextCredentials("", "", null);
     }
 }

@@ -2,6 +2,8 @@ package com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.connect;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -62,6 +64,23 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
     private WearableBeaconFragment wearableBeaconFragment;
     private CustomViewPager viewPager;
     private boolean isUpdate;
+    private final Handler writeTimeoutHandler = new Handler(Looper.getMainLooper());
+    private boolean isWriting;
+    private boolean isResetting;
+    private final Runnable writeTimeoutRunnable = () -> {
+        if (isWriting) {
+            isWriting = false;
+            hideLoadingDialog();
+            toastMessageView(this, "寫入逾時，請確認裝置連線狀態");
+        }
+    };
+    private final Runnable resetTimeoutRunnable = () -> {
+        if (isResetting) {
+            isResetting = false;
+            hideLoadingDialog();
+            toastMessageView(this, "重置逾時，請確認裝置連線狀態");
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -176,6 +195,13 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
                 errorAccessNotMatch();
                 break;
         }
+        if (code == UsBeaconCommand.CMD_FACTORY_RESET && responseCode == UsBeaconCommand.ACK_SUCCESS) {
+            isResetting = false;
+            writeTimeoutHandler.removeCallbacks(resetTimeoutRunnable);
+            hideLoadingDialog();
+            toastMessageView(this, "重置完成");
+            finish();
+        }
     }
 
     @Override
@@ -183,6 +209,8 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
         switch (type) {
             case Write:
                 System.out.println("onMessageAckResponseDone ->  write");
+                isWriting = false;
+                writeTimeoutHandler.removeCallbacks(writeTimeoutRunnable);
                 this.isUpdate = true;
                 setUpModifiedDate();
                 startUpdateBeaconTask();
@@ -200,6 +228,11 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
 
     @Override
     public void onMessageAckResponseFailed(int flag) {
+        isWriting = false;
+        isResetting = false;
+        writeTimeoutHandler.removeCallbacks(writeTimeoutRunnable);
+        writeTimeoutHandler.removeCallbacks(resetTimeoutRunnable);
+        hideLoadingDialog();
         toastMessageView(this, "(" + flag + ")" + " 寫入失敗 ...");
     }
 
@@ -302,17 +335,8 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
     }
 
     private void startUpdateBeaconTask() {
-        if (NetworkManager.getInstance().isNetWorkNormal()) {
-            startWebServiceTask(new UpdateBeaconTask(this,
-                    entity.getTargetId() == null ? 0 : 1,
-                    entity.getDeviceName(),
-                    String.valueOf(getInformationBeaconFragment().getMajorValue()),
-                    String.valueOf(getInformationBeaconFragment().getMinorValue()),
-                    LoginManager.getInstance().getAccountDataEntity().getMemberId(),
-                    entity.getTargetId()));
-        } else {
-            toastMessageView(this, getString(R.string.successfully_modified_no_internet));
-        }
+        hideLoadingDialog();
+        toastMessageView(this, getString(R.string.successfully_modified));
     }
 
     @Override
@@ -420,12 +444,14 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
     }
 
     private void onResetButtonClick() { // reset
+        showLoadingDialog(null, "請稍後...");
+        isResetting = true;
+        writeTimeoutHandler.removeCallbacks(resetTimeoutRunnable);
+        writeTimeoutHandler.postDelayed(resetTimeoutRunnable, 20000);
         BluetoothConnectDeviceManager.getInstance().addCommandToQueue(
                 UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_FACTORY_RESET));
+        BluetoothConnectDeviceManager.getInstance().setCommandType(CommandType.Write);
         BluetoothConnectDeviceManager.getInstance().executeCommandTask();
-
-        toastMessageView(this, "重置回原廠設定...");
-        finish();
     }
 
     private void onSaveButtonClick() { // 確定修改資料至beacon
@@ -439,6 +465,9 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
      */
     private void startUpdateDataToBeacon() {
         showLoadingDialog(null, "請稍後...");
+        isWriting = true;
+        writeTimeoutHandler.removeCallbacks(writeTimeoutRunnable);
+        writeTimeoutHandler.postDelayed(writeTimeoutRunnable, 20000);
         updateAccessUuidCommand();
         switch (entity.getDeviceType()) {
             case REMOTE_TYPE_BEACON:

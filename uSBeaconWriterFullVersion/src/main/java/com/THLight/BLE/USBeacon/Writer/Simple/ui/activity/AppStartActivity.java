@@ -37,7 +37,7 @@ public class AppStartActivity extends Activity implements OnCompletionListener {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFERENCES_FILE_APP_START, MODE_PRIVATE);
         boolean shown = sharedPreferences.getBoolean(SHARED_PREFERENCES_BOOLEAN_SPECIAL_DIALOG_SHOWN, false);
         if (shown) {
-            bindVideoView();
+            startSpecifyActivity();
             return;
         }
         new AlertDialog.Builder(this)
@@ -47,19 +47,27 @@ public class AppStartActivity extends Activity implements OnCompletionListener {
                     sharedPreferences.edit().putBoolean(SHARED_PREFERENCES_BOOLEAN_SPECIAL_DIALOG_SHOWN, true).apply();
                     dialog.dismiss();
                 })
-                .setOnDismissListener(dialog -> bindVideoView())
+                .setOnDismissListener(dialog -> startSpecifyActivity())
                 .setCancelable(true)
                 .show();
     }
 
     private void bindVideoView() { // 開場動畫
-        Uri video = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.opening);
         VideoView videoView = findViewById(R.id.activityAppStart_videoView);
+        if (videoView == null) {
+            startSpecifyActivity();
+            return;
+        }
+        Uri video = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.opening);
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         mediaController.setVisibility(View.GONE);
         videoView.setLayoutParams(new FrameLayout.LayoutParams(ScreenUtil.getScreenWidth(this), ScreenUtil.getScreenHeight(this)));
         videoView.setMediaController(mediaController);
+        videoView.setOnErrorListener((mp, what, extra) -> {
+            startSpecifyActivity();
+            return true;
+        });
         videoView.setVideoURI(video);
         videoView.start();
         videoView.setOnCompletionListener(this);

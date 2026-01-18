@@ -1,11 +1,11 @@
 package com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.scan;
 
-import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toolbar;
+import android.os.Build;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -120,24 +120,23 @@ public class ScanDeviceListActivity extends BaseActivity implements CustomRecycl
     }
 
     private void requestDownloadBeaconTask() {
-        String queryUUID = LoginManager.getInstance().getAccountDataEntity().getQueryUUID();
-        startWebServiceTask(new DownloadBeaconUrlTask(this, queryUUID));
+        // Local-only mode: skip server sync for beacon list.
     }
 
     private void checkBtScanRequest() {
         if (!RequestPermissionHelper.isBluetoothAdapterEnable()) { // A request for open Bluetooth
             System.out.println("checkBtScanRequest step 1  ");
             RequestPermissionHelper.requestBluetoothEnable(this);
-        } else if (!RequestPermissionHelper.isLocationSettingEnable(this)) { // A request for open Location
+        } else if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S && !RequestPermissionHelper.isLocationSettingEnable(this)) { // A request for open Location
             System.out.println("checkBtScanRequest step 2  ");
             RequestPermissionHelper.requestLocationSettingEnable(this);
         } else { // check location permission
-            if (RequestPermissionHelper.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION)) {
+            if (RequestPermissionHelper.hasRequiredScanPermissions(this)) {
                 System.out.println("checkBtScanRequest step 3  ");
                 requestScanDeviceTask();
             } else {
                 System.out.println("checkBtScanRequest step 4  ");
-                RequestPermissionHelper.requestLocationPermission(this);
+                RequestPermissionHelper.requestRequiredScanPermissions(this);
             }
         }
     }

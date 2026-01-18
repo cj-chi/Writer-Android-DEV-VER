@@ -37,8 +37,7 @@ public class GsonUtil {
     public static <T> List<T> generateDataList(String gsonString, Class<T> className) {
         List<T> list = null;
         if (gson != null) {
-            list = gson.fromJson(gsonString, new TypeToken<List<T>>() {
-            }.getType());
+            list = gson.fromJson(gsonString, TypeToken.getParameterized(List.class, className).getType());
         }
         return list;
     }

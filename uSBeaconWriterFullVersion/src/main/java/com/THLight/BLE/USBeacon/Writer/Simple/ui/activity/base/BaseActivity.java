@@ -115,7 +115,7 @@ public class BaseActivity extends FragmentActivity implements ActionNetWorkChang
                     snackbar.dismiss();
                 }
             });
-            TextView textView = snackBarView.findViewById(R.id.snackbar_text);
+            TextView textView = snackBarView.findViewById(com.google.android.material.R.id.snackbar_text);
             textView.setTextColor(getResources().getColor(R.color.white_1));
             textView.setGravity(Gravity.CENTER);
             textView.setTextSize(16);

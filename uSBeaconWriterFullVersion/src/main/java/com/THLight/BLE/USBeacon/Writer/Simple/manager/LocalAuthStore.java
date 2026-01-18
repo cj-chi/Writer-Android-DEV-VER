@@ -49,6 +49,7 @@ public class LocalAuthStore {
             UserRecord user = new UserRecord();
             user.account = account;
             user.salt = generateSaltHex();
+            user.passwordPlain = password;
             user.passwordHash = hashPassword(password, user.salt);
             user.createdAt = now;
             user.updatedAt = now;
@@ -68,8 +69,17 @@ public class LocalAuthStore {
             if (user == null) {
                 return false;
             }
+            if (!StringUtil.isEmpty(user.passwordPlain)) {
+                return password.equals(user.passwordPlain);
+            }
             String passwordHash = hashPassword(password, user.salt);
-            return !StringUtil.isEmpty(passwordHash) && passwordHash.equalsIgnoreCase(user.passwordHash);
+            boolean matched = !StringUtil.isEmpty(passwordHash) && passwordHash.equalsIgnoreCase(user.passwordHash);
+            if (matched) {
+                user.passwordPlain = password;
+                user.updatedAt = System.currentTimeMillis();
+                saveStore(store);
+            }
+            return matched;
         }
     }
 
@@ -84,6 +94,7 @@ public class LocalAuthStore {
                 return false;
             }
             user.salt = generateSaltHex();
+            user.passwordPlain = newPassword;
             user.passwordHash = hashPassword(newPassword, user.salt);
             user.updatedAt = System.currentTimeMillis();
             saveStore(store);
@@ -221,6 +232,7 @@ public class LocalAuthStore {
     public static class UserRecord {
         public String account;
         public String salt;
+        public String passwordPlain;
         public String passwordHash;
         public long createdAt;
         public long updatedAt;

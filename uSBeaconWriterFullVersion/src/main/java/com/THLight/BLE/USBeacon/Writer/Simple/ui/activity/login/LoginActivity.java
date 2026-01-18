@@ -10,26 +10,24 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.view.inputmethod.EditorInfo;
 import android.widget.TextView.OnEditorActionListener;
 
 import com.THLight.BLE.USBeacon.Writer.Simple.R;
+import com.THLight.BLE.USBeacon.Writer.Simple.entity.login.AccountDataEntity;
+import com.THLight.BLE.USBeacon.Writer.Simple.manager.LocalAuthStore;
 import com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.base.BaseActivity;
 import com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.register.RegisterActivity;
 import com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.scan.ScanDeviceListActivity;
 import com.THLight.BLE.USBeacon.Writer.Simple.manager.LoginManager;
+import com.THLight.BLE.USBeacon.Writer.Simple.manager.LocalAuthStore;
 import com.THLight.BLE.USBeacon.Writer.Simple.util.StringUtil;
 import com.THLight.BLE.USBeacon.Writer.Simple.util.VersionUtil;
-import com.THLight.BLE.USBeacon.Writer.Simple.webservice.task.LoginTask;
-import com.THLight.BLE.USBeacon.Writer.Simple.webservice.task.ForgetPassWordTask;
-import com.THLight.BLE.USBeacon.Writer.Simple.webservice.task.ForgetPassWordTask.ForgetPassWordTaskResponseListener;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class LoginActivity extends BaseActivity implements OnClickListener, OnItemSelectedListener,
-        ForgetPassWordTaskResponseListener, LoginTask.LoginResponseListener {
+public class LoginActivity extends BaseActivity implements OnClickListener, OnItemSelectedListener {
     private List<String> userAccountList = new ArrayList<>();
     private List<String> userPasswordList = new ArrayList<>();
     private boolean initialization;
@@ -141,24 +139,23 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnIt
 
     private void startForgetPassWordTask() {
         if (StringUtil.isEmpty(getAccountEditTextString())
-                || !StringUtil.isEmail(getAccountEditTextString())) {
-            toastMessageView(this, getString(R.string.login_failed));
-        } else {
-            showLoadingDialog(null, "請稍後...");
-            startWebServiceTask(new ForgetPassWordTask(this, getAccountEditTextString()));
+                || !StringUtil.isFourAlphaNumeric(getAccountEditTextString())) {
+            toastMessageView(this, getString(R.string.account_format_error));
+            return;
         }
-    }
-
-    @Override
-    public void onForgetPassWordResponseSuccess() {
+        if (StringUtil.isEmpty(getPassWordEditTextString())) {
+            getPassWordEditText().setError(getString(R.string.password_format_error));
+            return;
+        }
+        showLoadingDialog(null, "請稍後...");
+        boolean reset = LocalAuthStore.getInstance()
+                .resetPassword(getAccountEditTextString(), getPassWordEditTextString());
         hideLoadingDialog();
-        toastMessageView(this, getString(R.string.password_send));
-    }
-
-    @Override
-    public void onForgetPassWordResponseError() {
-        hideLoadingDialog();
-        toastMessageView(this, getString(R.string.account_not_exist));
+        if (reset) {
+            toastMessageView(this, getString(R.string.password_send));
+        } else {
+            toastMessageView(this, getString(R.string.account_not_exist));
+        }
     }
 
     private void startLoginTask() {
@@ -172,29 +169,16 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnIt
             getPassWordEditText().setError(getString(R.string.password_format_error));
         } else {
             showLoadingDialog(null, "請稍後...");
-            startWebServiceTask(new LoginTask(this, getAccountEditTextString(), getPassWordEditTextString()));
+            if (tryLocalLogin()) {
+                hideLoadingDialog();
+                startScanDeviceListActivity();
+            } else {
+                hideLoadingDialog();
+                toastMessageView(this, getString(R.string.login_failed));
+            }
         }
     }
 
-    @Override
-    public void onLoginResponseSuccess(String response) {
-        hideLoadingDialog();
-        LoginManager.getInstance().setAccountDataString(response);
-        saveAccountList();
-        startScanDeviceListActivity();
-    }
-
-    @Override
-    public void onLoginNetworkError() {
-        hideLoadingDialog();
-        toastMessageView(this, getString(R.string.network_no_connect));
-    }
-
-    @Override
-    public void onLoginResponseError() {
-        hideLoadingDialog();
-        toastMessageView(this, getString(R.string.login_failed));
-    }
 
     private boolean checkEditTextEmpty() {
         return StringUtil.isEmpty(getAccountEditTextString()) || StringUtil.isEmpty(getPassWordEditTextString());
@@ -217,6 +201,20 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnIt
         LoginManager.getInstance().setUserAccountList(userAccountList);
         LoginManager.getInstance().setUserPasswordList(userPasswordList);
         LoginManager.getInstance().setLastPosition(userAccountList.size() - 1); // 從新登入的位置開始
+    }
+
+    private boolean tryLocalLogin() {
+        String account = getAccountEditTextString();
+        String password = getPassWordEditTextString();
+        boolean verified = LocalAuthStore.getInstance().verify(account, password);
+        if (!verified) {
+            return false;
+        }
+        AccountDataEntity accountDataEntity = AccountDataEntity.fromCredentials(account, password);
+        LoginManager.getInstance().setAccountDataEntity(accountDataEntity);
+        LoginManager.getInstance().persistPlainTextCredentials(account, password, accountDataEntity);
+        saveAccountList();
+        return true;
     }
 
     private String getAccountEditTextString() {

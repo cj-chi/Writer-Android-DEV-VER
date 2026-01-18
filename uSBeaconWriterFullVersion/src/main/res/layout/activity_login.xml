@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="60dp">
+
+        <Spinner
+            android:id="@+id/activityLogin_accountSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/activityLogin_accountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_edit_bg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFFFF"
+            android:textCursorDrawable="@null" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/activityLogin_passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/login_edit_bg"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFFFFFF"
+        android:textCursorDrawable="@null" />
+
+    <TextView
+        android:id="@+id/activityLogin_forgetPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="60dp"
+        android:text="@string/login_forget_password"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FF27AAE1" />
+
+    <Button
+        android:id="@+id/activityLogin_loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/state_login_btn_login"
+        android:gravity="center"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/activityLogin_createAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/state_login_btn_create_acc"
+        android:gravity="center"
+        android:padding="16dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/login_text_create_acc" />
+
+    <TextView
+        android:id="@+id/activityLogin_versionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="version"
+        android:textColor="@android:color/darker_gray" />
+
+
+</LinearLayout>

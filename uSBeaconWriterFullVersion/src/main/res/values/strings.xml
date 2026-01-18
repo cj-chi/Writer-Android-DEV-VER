@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">USBeaconWriteTool Dev</string>
+    <string name="error_login">User ID or Password can not be empty.</string>
+    <string name="keep_me_login">Keep Me Login</string>
+    <string name="email">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login_failed">Please check your account or password again.</string>
+    <string name="logout">Log out</string>
+    <string name="fast_setting">Fast setting</string>
+    <string name="aes_setting">AES setting</string>
+    <string name="success">Create a new account success.</string>
+    <string name="password_send">Password is send to your mail.</string>
+    <string name="email_used">Email has been used.</string>
+    <string name="account_not_exist">Account is not exist.</string>
+    <string name="connect_failed">Failed</string>
+    <string name="discover_service_failed">Service discovery failed</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="network_no_connect">No connection, check your network and try again.</string>
+    <string name="connect_no_permission">No Permission</string>
+    <string name="successfully_modified">Successfully Modified</string>
+    <string name="successfully_modified_no_internet">The modification was successful\nbut it was not uploaded to the Server because there is no internet</string>
+    <!-- MAIN -->
+    <string name="read_data_failed">Read data failed.</string>
+    <string name="set_up_success">Set up success.</string>
+    <string name="save_warning">Are you sure you want to write?</string>
+    <string name="step_cleared">Steps cleared.</string>
+    <string name="version_name">version:</string>
+    <string name="system">System</string>
+
+    <!-- FB app id -->
+    <!-- <string name="fb_login_protocol_scheme">fb615363698561076</string>  -->
+
+    <string name="login_forget_password">Forgot Password ?</string>
+    <string name="low_power_led">低電量燈號/</string>
+
+    <string-array name="txpower">
+        <item>1 meters max range</item>
+        <item>10 meters max range</item>
+        <item>25 meters max range</item>
+        <item>50 meters max range</item>
+    </string-array>
+    <string-array name="txpower2640">
+        <item>Level 0, -21dbm</item>
+        <item>Level 1, -18dbm</item>
+        <item>Level 2, -15dbm</item>
+        <item>Level 3, -12dbm</item>
+        <item>Level 4, -9dbm</item>
+        <item>Level 5, -6dbm</item>
+        <item>Level 6, -3dbm</item>
+        <item>Level 7, 0dbm</item>
+        <item>Level 8, 1dbm</item>
+        <item>Level 9, 2dbm</item>
+        <item>Level 10, 3dbm</item>
+        <item>Level 11, 4dbm</item>
+        <item>Level 12, 5dbm</item>
+    </string-array>
+    <string-array name="txpower2020">
+        <item>Level 0, -20dbm</item>
+        <item>Level 1, -10dbm</item>
+        <item>Level 2, -6dbm</item>
+        <item>Level 3, -4dbm</item>
+        <item>Level 4, -2dbm</item>
+        <item>Level 5, 0dbm</item>
+        <item>Level 6, 2dbm</item>
+        <item>Level 7, 4dbm</item>
+    </string-array>
+
+</resources>

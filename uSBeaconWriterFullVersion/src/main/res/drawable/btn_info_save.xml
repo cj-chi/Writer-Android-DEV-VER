@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- pressed -->
+    <item android:drawable="@drawable/btn_info_save_002" android:state_pressed="true" />
+
+    <!-- all other states -->
+    <item android:drawable="@drawable/btn_info_save_001" />
+</selector>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_login">帳號以及密碼不能是空的</string>
+
+    <string name="login_forget_password">忘記密碼?</string>
+	<string name="keep_me_login">保持登入</string>
+	<string name="email">電子郵件</string>
+	<string name="password">密碼</string>
+	<string name="confirm_password">確認密碼</string>
+    <string name="login_failed">請再次檢查您的帳號以及密碼</string>
+    <string name="logout">登出</string>
+    <string name="fast_setting">快速設定</string>
+    <string name="aes_setting">AES 加密設定</string>
+	<string name="success">成功建立新帳號</string>
+	<string name="password_send">密碼已經寄到您的信箱</string>
+	<string name="email_used">電子郵件已經被使用過了</string>
+	<string name="account_not_exist">無此帳號</string>
+    <string name="connect_failed">連線失敗</string>
+    <string name="discover_service_failed">尋找服務失敗</string>
+    <string name="disconnected">中斷連線</string>
+    <string name="network_no_connect">無法連接到網路，請檢查網路連線狀態是否正常或再試一次！</string>
+    <string name="connect_no_permission">No Permission</string>
+    <string name="successfully_modified">修改成功</string>
+    <string name="successfully_modified_no_internet">修改成功\n不過由於沒有網路所以沒上傳到Server</string>
+    <!-- MAIN -->
+    <string name="read_data_failed">讀取資料失敗</string>
+  	<string name="set_up_success">設定成功</string>
+    <string name="save_warning">確定要寫入資料?</string>
+    <string name="step_cleared">步數已清除</string>
+	<string name="version_name">版本號碼:</string>
+	<string name="system">系統</string>
+
+    <!-- FB app id -->
+        <!--<string name="app_id">615363698561076</string> -->
+    <string-array name="txpower">
+        <item>最大距離一公尺</item>
+        <item>最大距離十公尺</item>
+        <item>最大距離二十公尺</item>
+        <item>最大距離五十公尺</item>
+    </string-array>
+
+</resources>

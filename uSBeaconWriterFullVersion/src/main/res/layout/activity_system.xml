@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_1"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/activitySystem_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:theme="@style/ToolBarStyle"
+        app:navigationIcon="@drawable/icon_back_black" />
+
+    <TextView
+        android:id="@+id/activitySystem_logoutTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableRight="@drawable/icon_go_grey"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/logout"
+        android:textColor="@color/grey_1"
+        android:textSize="16dp" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/activitySystem_fastSettingSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right" />
+
+        <TextView
+            android:id="@+id/activitySystem_fastSettingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/fast_setting"
+            android:textColor="@color/grey_1"
+            android:textSize="16dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/activitySystem_aesSettingSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right" />
+
+        <TextView
+            android:id="@+id/activitySystem_aesSettingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/aes_setting"
+            android:textColor="@color/grey_1"
+            android:textSize="16dp" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:background="@color/grey_5" />
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.THLight.BLE.USBeacon.Writer.Simple">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:name="com.THLight.BLE.USBeacon.Writer.Simple.application.ThLightApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_usbeacon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+
+        <activity
+            android:name=".ui.activity.AppStartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.connect.EditDeviceActivity"
+            android:theme="@style/NoActionBarTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.system.SystemActivity"
+            android:theme="@style/NoActionBarTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.scan.ScanDeviceListActivity"
+            android:theme="@style/NoActionBarTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.register.RegisterActivity"
+            android:theme="@style/NoActionBarDialogTheme" />
+
+        <activity
+            android:name=".ui.activity.connect.ReadRemoteRSSIDialogActivity"
+            android:theme="@style/NoActionBarDialogTheme" />
+
+        <receiver android:name=".helper.BroadcastReceiverHelper" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_4"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/activityEditDevice_contentFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/beacon_config_head"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/activityEditDevice_backTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Back"
+            android:textColor="@color/white_1"
+            android:textSize="16dp" />
+    </FrameLayout>
+
+    <com.THLight.BLE.USBeacon.Writer.Simple.ui.pager.CustomViewPager
+        android:id="@+id/activityEditDevice_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/activityEditDevice_resetButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@drawable/btn_reset"
+            android:minHeight="56dp" />
+
+        <Button
+            android:id="@+id/activityEditDevice_saveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="@drawable/btn_info_save"
+            android:minHeight="56dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

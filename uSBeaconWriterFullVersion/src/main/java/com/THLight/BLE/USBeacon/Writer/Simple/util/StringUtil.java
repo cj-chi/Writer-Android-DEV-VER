@@ -43,6 +43,13 @@ public class StringUtil {
         return matcher.matches();
     }
 
+    public static boolean isFourAlphaNumeric(String text) {
+        if (isEmpty(text)) {
+            return false;
+        }
+        return text.matches("^[A-Za-z0-9]{4}$");
+    }
+
     public static String generateNumberUnitString(long number) {
         if (number >= 1000000) {
             return String.format(Locale.US, "%.1f", (number / 1000000f)) + "m";

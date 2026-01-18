@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.inputmethod.EditorInfo;
+import android.widget.TextView.OnEditorActionListener;
 
 import com.THLight.BLE.USBeacon.Writer.Simple.R;
 import com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.base.BaseActivity;
@@ -52,6 +54,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnIt
         bindAccountSpinner();
         bindAccountEditText();
         bindPasswordEditText();
+        bindEditorActionListeners();
         bindForgetPasswordTextView();
         bindCreateAccountButton();
         bindLoginButton();
@@ -163,6 +166,10 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnIt
             return;
         } else if (checkEditTextEmpty()) {
             toastMessageView(this, getString(R.string.error_login));
+        } else if (!StringUtil.isFourAlphaNumeric(getAccountEditTextString())) {
+            getAccountEditText().setError(getString(R.string.account_format_error));
+        } else if (!StringUtil.isFourAlphaNumeric(getPassWordEditTextString())) {
+            getPassWordEditText().setError(getString(R.string.password_format_error));
         } else {
             showLoadingDialog(null, "請稍後...");
             startWebServiceTask(new LoginTask(this, getAccountEditTextString(), getPassWordEditTextString()));
@@ -213,11 +220,43 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnIt
     }
 
     private String getAccountEditTextString() {
-        return ((EditText) findViewById(R.id.activityLogin_accountEditText)).getText().toString();
+        return getAccountEditText().getText().toString();
     }
 
     private String getPassWordEditTextString() {
-        return ((EditText) findViewById(R.id.activityLogin_passwordEditText)).getText().toString();
+        return getPassWordEditText().getText().toString();
+    }
+
+    private EditText getAccountEditText() {
+        return (EditText) findViewById(R.id.activityLogin_accountEditText);
+    }
+
+    private EditText getPassWordEditText() {
+        return (EditText) findViewById(R.id.activityLogin_passwordEditText);
+    }
+
+    private void bindEditorActionListeners() {
+        OnEditorActionListener listener = (view, actionId, event) -> {
+            if (actionId == EditorInfo.IME_ACTION_DONE) {
+                validateFourAlphaNumeric((EditText) view);
+            }
+            return false;
+        };
+        getAccountEditText().setOnEditorActionListener(listener);
+        getPassWordEditText().setOnEditorActionListener(listener);
+    }
+
+    private void validateFourAlphaNumeric(EditText editText) {
+        String text = editText.getText().toString();
+        if (editText.getId() == R.id.activityLogin_accountEditText) {
+            if (!StringUtil.isFourAlphaNumeric(text)) {
+                editText.setError(getString(R.string.account_format_error));
+            }
+        } else if (editText.getId() == R.id.activityLogin_passwordEditText) {
+            if (!StringUtil.isFourAlphaNumeric(text)) {
+                editText.setError(getString(R.string.password_format_error));
+            }
+        }
     }
 
     private void startScanDeviceListActivity() {

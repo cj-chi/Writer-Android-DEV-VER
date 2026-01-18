@@ -29,7 +29,7 @@
             android:background="@null"
             android:gravity="center"
             android:hint="@string/email"
-            android:inputType="textEmailAddress|textAutoComplete"
+            android:inputType="textVisiblePassword"
             android:textColor="@color/grey_1"
             android:textSize="20dp" />
 

@@ -5,16 +5,22 @@
 
     <string name="login_forget_password">忘記密碼?</string>
 	<string name="keep_me_login">保持登入</string>
-	<string name="email">電子郵件</string>
-	<string name="password">密碼</string>
-	<string name="confirm_password">確認密碼</string>
+	<string name="email">帳號（4碼英文或數字）</string>
+	<string name="password">密碼（4碼英文或數字）</string>
+	<string name="confirm_password">確認密碼（4碼英文或數字）</string>
     <string name="login_failed">請再次檢查您的帳號以及密碼</string>
+    <string name="account_format_error">帳號需為4碼英文或數字</string>
+    <string name="password_format_error">密碼需為4碼英文或數字</string>
+    <string name="confirm_password_format_error">確認密碼需為4碼英文或數字</string>
+    <string name="register_success_title">註冊成功</string>
+    <string name="register_success_message">註冊完成。\n帳號：%1$s\n密碼：%2$s\n請用紙筆記下，日後若忘記密碼將無法找回。</string>
+    <string name="register_success_button">確認</string>
     <string name="logout">登出</string>
     <string name="fast_setting">快速設定</string>
     <string name="aes_setting">AES 加密設定</string>
 	<string name="success">成功建立新帳號</string>
-	<string name="password_send">密碼已經寄到您的信箱</string>
-	<string name="email_used">電子郵件已經被使用過了</string>
+	<string name="password_send">密碼已完成重設</string>
+	<string name="email_used">帳號已被使用</string>
 	<string name="account_not_exist">無此帳號</string>
     <string name="connect_failed">連線失敗</string>
     <string name="discover_service_failed">尋找服務失敗</string>

@@ -30,7 +30,7 @@
             android:ems="10"
             android:gravity="center"
             android:hint="@string/email"
-            android:inputType="textEmailAddress"
+            android:inputType="textVisiblePassword"
             android:padding="12dp"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="#FFFFFFFF"
@@ -63,7 +63,8 @@
         android:layout_marginRight="60dp"
         android:text="@string/login_forget_password"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#FF27AAE1" />
+        android:textColor="#FF27AAE1"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/activityLogin_loginButton"

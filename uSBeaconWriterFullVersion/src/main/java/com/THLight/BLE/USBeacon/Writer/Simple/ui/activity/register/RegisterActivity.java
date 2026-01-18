@@ -1,18 +1,20 @@
 package com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.register;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
 
 import com.THLight.BLE.USBeacon.Writer.Simple.R;
+import com.THLight.BLE.USBeacon.Writer.Simple.manager.LocalAuthStore;
 import com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.base.BaseActivity;
 import com.THLight.BLE.USBeacon.Writer.Simple.util.StringUtil;
-import com.THLight.BLE.USBeacon.Writer.Simple.webservice.task.RegisterTask;
-import com.THLight.BLE.USBeacon.Writer.Simple.webservice.task.RegisterTask.RegisterResponseListener;
 
-public class RegisterActivity extends BaseActivity implements OnClickListener, RegisterResponseListener {
+public class RegisterActivity extends BaseActivity implements OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,7 @@ public class RegisterActivity extends BaseActivity implements OnClickListener, R
     private void bindContentView() {
         bindMainView();
         bindSettingButton();
+        bindEditorActionListeners();
     }
 
     private void bindMainView() {
@@ -70,16 +73,40 @@ public class RegisterActivity extends BaseActivity implements OnClickListener, R
             if (StringUtil.isEmpty(getConfirmPassWordEditTextString())) {
                 getConfirmPassWordEditText().setError("請確認密碼");
             }
-        } else if (!StringUtil.isEmail(getAccountEditTextString())) {
-            getAccountEditText().setError("email格式錯誤");
-        } else if (getPassWordEditTextString().length() < 6) {
-            getPassWordEditText().setError("密碼數量不得低於6位");
+        } else if (!StringUtil.isFourAlphaNumeric(getAccountEditTextString())) {
+            getAccountEditText().setError(getString(R.string.account_format_error));
+        } else if (!StringUtil.isFourAlphaNumeric(getPassWordEditTextString())) {
+            getPassWordEditText().setError(getString(R.string.password_format_error));
+        } else if (!StringUtil.isFourAlphaNumeric(getConfirmPassWordEditTextString())) {
+            getConfirmPassWordEditText().setError(getString(R.string.confirm_password_format_error));
         } else if (!checkPassWordEditString()) {
             getConfirmPassWordEditText().setError("請確認是否與密碼輸入相同");
         } else {
             showLoadingDialog(null, "請稍後...");
-            startWebServiceTask(new RegisterTask(this, getAccountEditTextString(), getPassWordEditTextString()));
+            boolean registered = LocalAuthStore.getInstance()
+                    .register(getAccountEditTextString(), getPassWordEditTextString());
+            hideLoadingDialog();
+            if (registered) {
+                showRegisterSuccessDialog();
+            } else {
+                toastMessageView(this, getString(R.string.email_used));
+            }
         }
+    }
+
+    private void showRegisterSuccessDialog() {
+        String account = getAccountEditTextString();
+        String password = getPassWordEditTextString();
+        String message = String.format(getString(R.string.register_success_message), account, password);
+        new AlertDialog.Builder(this)
+                .setTitle(getString(R.string.register_success_title))
+                .setMessage(message)
+                .setPositiveButton(getString(R.string.register_success_button), (dialog, which) -> {
+                    dialog.dismiss();
+                    finish();
+                })
+                .setCancelable(false)
+                .show();
     }
 
     private boolean checkEditTextEmpty() {
@@ -115,22 +142,33 @@ public class RegisterActivity extends BaseActivity implements OnClickListener, R
         return (EditText) findViewById(R.id.activityCreateAccount_confirmPassWordEditText);
     }
 
-    @Override
-    public void onRegisterResponseSuccess(String response) {
-        hideLoadingDialog();
-        toastMessageView(this, getString(R.string.success));
-        finish();
+    private void bindEditorActionListeners() {
+        OnEditorActionListener listener = (view, actionId, event) -> {
+            if (actionId == EditorInfo.IME_ACTION_DONE) {
+                validateFourAlphaNumeric((EditText) view);
+            }
+            return false;
+        };
+        getAccountEditText().setOnEditorActionListener(listener);
+        getPassWordEditText().setOnEditorActionListener(listener);
+        getConfirmPassWordEditText().setOnEditorActionListener(listener);
     }
 
-    @Override
-    public void onRegisterNetworkError() {
-        hideLoadingDialog();
-        toastMessageView(this, getString(R.string.network_no_connect));
+    private void validateFourAlphaNumeric(EditText editText) {
+        String text = editText.getText().toString();
+        if (editText.getId() == R.id.activityCreateAccount_accountEditText) {
+            if (!StringUtil.isFourAlphaNumeric(text)) {
+                editText.setError(getString(R.string.account_format_error));
+            }
+        } else if (editText.getId() == R.id.activityCreateAccount_passWordEditText) {
+            if (!StringUtil.isFourAlphaNumeric(text)) {
+                editText.setError(getString(R.string.password_format_error));
+            }
+        } else if (editText.getId() == R.id.activityCreateAccount_confirmPassWordEditText) {
+            if (!StringUtil.isFourAlphaNumeric(text)) {
+                editText.setError(getString(R.string.confirm_password_format_error));
+            }
+        }
     }
 
-    @Override
-    public void onRegisterResponseError() {
-        hideLoadingDialog();
-        toastMessageView(this, getString(R.string.email_used));
-    }
 }

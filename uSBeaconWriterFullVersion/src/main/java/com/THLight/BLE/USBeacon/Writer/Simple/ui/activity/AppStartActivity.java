@@ -1,7 +1,9 @@
 package com.THLight.BLE.USBeacon.Writer.Simple.ui.activity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.net.Uri;
@@ -21,12 +23,33 @@ import com.THLight.BLE.USBeacon.Writer.Simple.util.ScreenUtil;
  * Created by Allen on 2020/3/4.
  */
 public class AppStartActivity extends Activity implements OnCompletionListener {
+    private static final String SHARED_PREFERENCES_FILE_APP_START = "SHARED_PREFERENCES_FILE_APP_START";
+    private static final String SHARED_PREFERENCES_BOOLEAN_SPECIAL_DIALOG_SHOWN = "SHARED_PREFERENCES_BOOLEAN_SPECIAL_DIALOG_SHOWN";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app_start);
-        bindVideoView();
+        showSpecialVersionDialogIfNeeded();
+    }
+
+    private void showSpecialVersionDialogIfNeeded() {
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFERENCES_FILE_APP_START, MODE_PRIVATE);
+        boolean shown = sharedPreferences.getBoolean(SHARED_PREFERENCES_BOOLEAN_SPECIAL_DIALOG_SHOWN, false);
+        if (shown) {
+            bindVideoView();
+            return;
+        }
+        new AlertDialog.Builder(this)
+                .setTitle("特殊版本提示")
+                .setMessage("這是特殊版本，與原版 App 可共存。請記得依需求記錄資訊後再繼續使用。")
+                .setPositiveButton("我知道了", (dialog, which) -> {
+                    sharedPreferences.edit().putBoolean(SHARED_PREFERENCES_BOOLEAN_SPECIAL_DIALOG_SHOWN, true).apply();
+                    dialog.dismiss();
+                })
+                .setOnDismissListener(dialog -> bindVideoView())
+                .setCancelable(true)
+                .show();
     }
 
     private void bindVideoView() { // 開場動畫

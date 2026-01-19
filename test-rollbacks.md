@@ -166,6 +166,26 @@
 
 ---
 
+## 1.2a.0009
+
+### 測試項目
+- Factory reset 後登出/建立新帳號/登入
+- 操作與指令 log（UI_ACTION / BLE_CMD / BLE_QUEUE / WRITE_VALUES）
+- 敏感登入資訊 log（SENSITIVE_AUTH）
+
+### 成功
+- 新帳號登入成功並產生新的 Access UUID
+- Factory reset 指令發送成功，後續回讀流程可見
+
+### 失敗
+- 未紀錄
+
+### 備註
+- 本版為測試用版，log 含帳號/密碼/Access UUID（高風險）。
+- 測試備份與說明請見 `login-backups/README.md`。
+
+---
+
 ## 補充：rollback 判斷建議
 
 - 若遇到 Access UUID 驗證問題，回到 1.2a.0004 可驗證基本流程是否仍可完整寫入。

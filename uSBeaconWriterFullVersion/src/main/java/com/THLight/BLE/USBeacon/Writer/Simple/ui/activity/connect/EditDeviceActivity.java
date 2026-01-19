@@ -28,6 +28,7 @@ import com.THLight.BLE.USBeacon.Writer.Simple.manager.LoginManager;
 import com.THLight.BLE.USBeacon.Writer.Simple.ui.pager.CustomViewPager;
 import com.THLight.BLE.USBeacon.Writer.Simple.util.BytesUtil;
 import com.THLight.BLE.USBeacon.Writer.Simple.util.GsonUtil;
+import com.THLight.BLE.USBeacon.Writer.Simple.util.LogUtil;
 import com.THLight.BLE.USBeacon.Writer.Simple.util.StringUtil;
 import com.THLight.BLE.USBeacon.Writer.Simple.webservice.task.BurnBeaconTask;
 import com.THLight.BLE.USBeacon.Writer.Simple.webservice.task.UpdateBeaconTask;
@@ -459,10 +460,12 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
     }
 
     private void onResetButtonClick() { // reset
+        LogUtil.log("UI_ACTION", "reset_click");
         showLoadingDialog(null, "請稍後...");
         isResetting = true;
         writeTimeoutHandler.removeCallbacks(resetTimeoutRunnable);
         writeTimeoutHandler.postDelayed(resetTimeoutRunnable, 20000);
+        LogUtil.log("BLE_CMD_REQUEST", "name=" + UsBeaconCommand.getCommandName(UsBeaconCommand.CMD_FACTORY_RESET));
         BluetoothConnectDeviceManager.getInstance().addCommandToQueue(
                 UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_FACTORY_RESET));
         BluetoothConnectDeviceManager.getInstance().setCommandType(CommandType.Write);
@@ -470,6 +473,7 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
     }
 
     private void onSaveButtonClick() { // 確定修改資料至beacon
+        LogUtil.log("UI_ACTION", "save_click page=" + viewPager.getCurrentItem());
         String uuidError = validateBeaconUuidInput();
         if (!StringUtil.isEmpty(uuidError)) {
             toastMessageView(this, uuidError);
@@ -513,6 +517,7 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
     When the device is of the original beacon type , the commands in the fourth page cannot be added.
      */
     private void startUpdateDataToBeacon() {
+        logWriteValuesForCurrentDevice();
         showLoadingDialog(null, "請稍後...");
         isWriting = true;
         writeTimeoutHandler.removeCallbacks(writeTimeoutRunnable);
@@ -551,6 +556,41 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
         }
         BluetoothConnectDeviceManager.getInstance().setCommandType(CommandType.Write);
         BluetoothConnectDeviceManager.getInstance().executeCommandTask();
+    }
+
+    private void logWriteValuesForCurrentDevice() {
+        InformationBeaconFragment infoFragment = getInformationBeaconFragment();
+        PowerBeaconFragment powerFragment = getPowerBeaconFragment();
+        WearableBeaconFragment wearableFragment = getWearableBeaconFragment();
+        if (infoFragment == null || powerFragment == null) {
+            LogUtil.log("WRITE_VALUES", "fragment_missing");
+            return;
+        }
+        String uuid = infoFragment.getBeaconUuidValue();
+        int major = infoFragment.getMajorValue();
+        int minor = infoFragment.getMinorValue();
+        int txPowerIndex = powerFragment.getSpinnerItemPosition();
+        int advPerSec = powerFragment.getBroadcastFrequencyValue();
+        StringBuilder builder = new StringBuilder();
+        builder.append("uuid=").append(uuid)
+                .append(" major=").append(major)
+                .append(" minor=").append(minor)
+                .append(" txPowerIndex=").append(txPowerIndex)
+                .append(" advPerSec=").append(advPerSec)
+                .append(" deviceType=").append(entity.getDeviceType());
+        if (entity.getDeviceType() != REMOTE_TYPE_BEACON && wearableFragment != null) {
+            int restTime = wearableFragment.getDelayRestTimeValue();
+            int restFreq = wearableFragment.getRestBroadcastFrequencyValue();
+            int gSensorSampling = wearableFragment.getGSensorSampling();
+            int gSensorSensitive = wearableFragment.getGSensorSensitive();
+            byte[] buzzerBytes = wearableFragment.getBuzzerBytes();
+            builder.append(" restTime=").append(restTime)
+                    .append(" restFreq=").append(restFreq)
+                    .append(" gSensorSampling=").append(gSensorSampling)
+                    .append(" gSensorSensitive=").append(gSensorSensitive)
+                    .append(" buzzer=").append(BytesUtil.getHexString(buzzerBytes));
+        }
+        LogUtil.log("WRITE_VALUES", builder.toString());
     }
 
     private void updateAccessUuidCommand() { // 將 自己的 access uuid 複寫到裝置上

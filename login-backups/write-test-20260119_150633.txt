@@ -1,0 +1,30 @@
+Test: write test flow (68:CF)
+Source: logcat-session.txt
+Window: 2026-01-19 15:05:33 ~ 15:05:52
+
+01-19 15:05:33.748 I/System.out( 2338): onScanDeviceItemClick :  : null
+01-19 15:05:33.751 D/BluetoothGatt( 2338): connect() - device: 60:77:71:FC:68:CF, auto: false
+01-19 15:05:33.981 D/BluetoothGatt( 2338): onClientConnectionState() - status=0 clientIf=8 device=60:77:71:FC:68:CF
+01-19 15:05:36.496 D/BluetoothGatt( 2338): onSearchComplete() = Device=60:77:71:FC:68:CF Status=0
+01-19 15:05:36.496 I/System.out( 2338): ConnectBLE onServicesDiscovered
+01-19 15:05:36.734 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 2e , responseCode : ffffff88 , data : 16A9291A53A293A6FF2A3F44BEDA33C1
+01-19 15:05:36.794 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 3 , responseCode : ffffff85 , data : 129BECA4A5649763D010A9A3F6666930
+01-19 15:05:36.854 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 14 , responseCode : 14 , data : 0A0000BE0576337A7A8EB836D88702C4
+01-19 15:05:36.914 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 10 , responseCode : 10 , data : E2C56DB5DFFB48D2B060D0F5A71096E0
+01-19 15:05:36.974 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 6 , responseCode : 6 , data : 0207014501B6F0A03599968ED411D698
+01-19 15:05:37.035 I/System.out( 2338): onMessageAckResponseDone ->  Read
+
+01-19 15:05:50.609 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 4 , responseCode : ffffff80 , data : A9C317E47A6B0ABBCF93D98991432275
+01-19 15:05:50.669 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 20 , responseCode : ffffff80 , data : 3B57E6DE2B1CA1AF050C13518CF3D98A
+01-19 15:05:50.730 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 21 , responseCode : ffffff80 , data : 48FC106A2B884753A19DE021D0631476
+01-19 15:05:50.790 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 22 , responseCode : ffffff80 , data : 8CD641ADFBB8B8A418E8F7D9C0E91C7B
+01-19 15:05:50.850 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 26 , responseCode : ffffff80 , data : 9D5EDC796886116AA901CA8341769599
+01-19 15:05:50.911 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 24 , responseCode : ffffff80 , data : 31288A8071C25A3486F22AEC57639405
+01-19 15:05:50.911 I/System.out( 2338): onMessageAckResponseDone ->  write
+
+01-19 15:05:50.984 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 14 , responseCode : 14 , data : 0A00008C1E695A49B377C3BD22E9AA1F
+01-19 15:05:51.045 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 10 , responseCode : 10 , data : E2C56DB5DFFB48D2B060D0F5A81096E0
+01-19 15:05:51.105 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 6 , responseCode : 6 , data : 0207014501E4AC239A46A60B7C3D56A4
+01-19 15:05:51.166 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 16 , responseCode : 16 , data : 0C5FAF37F2D748F0C55183E0B16D80DB
+01-19 15:05:51.166 I/System.out( 2338): onMessageAckResponseDone ->  UnKnown
+01-19 15:05:51.893 I/System.out( 2338): SettingCallBack : {"batteryPower":325,"broadcastFrequency":10,"connectWindowDelay":0,"deviceName":"USBeacon","deviceType":0,"firmWare":"2.7","hwId":"","isDisableAlarm":false,"lowBatteryLedStatus":0,"macAddress":"60:77:71:FC:68:CF","major":"0","meterRssi":"-48","minor":"99","restBroadcastFrequency":0,"restTime":0,"rssi":"-29","sensorSampling":0,"sensorSensitive":0,"sensorStatus":0,"trackerStatus":0,"txPowerIndex":12,"userId":"","uuid":"E2C56DB5-DFFB-48D2-B060-D0F5A81096E0","versionCharacteristicInt":27}

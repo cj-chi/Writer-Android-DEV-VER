@@ -288,4 +288,171 @@ public class UsBeaconCommand {
         newData[1] = cmd;
         return newData;
     }
+
+    public static String getCommandName(byte cmd) {
+        if (cmd == CMD_R_ADVERTISE_DELAY || cmd == CMD_R_TIME_BEFORE_ENTER_BEACON) {
+            return "CMD_R_TIME_BEFORE_ENTER_BEACON";
+        }
+        if (cmd == CMD_W_ADVERTISE_PER_SECOND || cmd == CMD_W_IB_FREQ_DELAY) {
+            return "CMD_W_ADVERTISE_PER_SECOND";
+        }
+        if (cmd == CMD_W_SYNC_TIME || cmd == CMD_W_SYNC_WORK_ADJUST_TIME) {
+            return "CMD_W_SYNC_WORK_ADJUST_TIME";
+        }
+        if (cmd == CMD_W_CLR_MOVE_STATUS || cmd == CMD_W_SECONDS_2_REST) {
+            return "CMD_W_SECONDS_2_REST";
+        }
+        if (cmd == CMD_R_SECONDS_2_REST || cmd == CMD_W_SPECIFIC_DATA) {
+            return "CMD_R_SECONDS_2_REST_OR_CMD_W_SPECIFIC_DATA";
+        }
+        if (cmd == CMD_ADMIN_ENTER_USBEACON || cmd == CMD_R_STEPS) {
+            return "CMD_ADMIN_ENTER_USBEACON_OR_CMD_R_STEPS";
+        }
+        switch (cmd) {
+            case CMD_FACTORY_RESET:
+                return "CMD_FACTORY_RESET";
+            case CMD_REBOOT:
+                return "CMD_REBOOT";
+            case CMD_CHECK_ACC_UUID:
+                return "CMD_CHECK_ACC_UUID";
+            case CMD_SET_ACC_UUID:
+                return "CMD_SET_ACC_UUID";
+            case CMD_GET_MAC_ADDR:
+                return "CMD_GET_MAC_ADDR";
+            case CMD_GET_INFO:
+                return "CMD_GET_INFO";
+            case CMD_GET_NAME:
+                return "CMD_GET_NAME";
+            case CMD_SET_NAME:
+                return "CMD_SET_NAME";
+            case CMD_SET_MAC_ADDR:
+                return "CMD_SET_MAC_ADDR";
+            case CMD_R_BEACON_UUID:
+                return "CMD_R_BEACON_UUID";
+            case CMD_R_BEACON_MAJOR:
+                return "CMD_R_BEACON_MAJOR";
+            case CMD_R_BEACON_MINOR:
+                return "CMD_R_BEACON_MINOR";
+            case CMD_R_BEACON_RSSI:
+                return "CMD_R_BEACON_RSSI";
+            case CMD_R_ADVERTISE_PER_SECOND:
+                return "CMD_R_ADVERTISE_PER_SECOND";
+            case CMD_R_TX_POWER:
+                return "CMD_R_TX_POWER";
+            case CMD_R_BAT_UUID:
+                return "CMD_R_BAT_UUID";
+            case CMD_R_SYNC_WORK_ADJUST_TIME:
+                return "CMD_R_SYNC_WORK_ADJUST_TIME";
+            case CMD_R_MOVE_STATUS:
+                return "CMD_R_MOVE_STATUS";
+            case CMD_W_BEACON_UUID:
+                return "CMD_W_BEACON_UUID";
+            case CMD_W_BEACON_MAJOR:
+                return "CMD_W_BEACON_MAJOR";
+            case CMD_W_BEACON_MINOR:
+                return "CMD_W_BEACON_MINOR";
+            case CMD_W_BEACON_RSSI:
+                return "CMD_W_BEACON_RSSI";
+            case CMD_W_ADVERTISE_PER_SECOND:
+                return "CMD_W_ADVERTISE_PER_SECOND";
+            case CMD_W_TIME_BEFORE_ENTER_BEACON:
+                return "CMD_W_TIME_BEFORE_ENTER_BEACON";
+            case CMD_W_TX_POWER:
+                return "CMD_W_TX_POWER";
+            case CMD_W_BAT_UUID:
+                return "CMD_W_BAT_UUID";
+            case CMD_W_MAJOR_MINOR:
+                return "CMD_W_MAJOR_MINOR";
+            case CMD_W_TX_POWER_RSSI:
+                return "CMD_W_TX_POWER_RSSI";
+            case CMD_W_BUZZER:
+                return "CMD_W_BUZZER";
+            case CMD_GET_BEACON_TYPE:
+                return "CMD_GET_BEACON_TYPE";
+            case CMD_ADMIN_FACTORY_RESET:
+                return "CMD_ADMIN_FACTORY_RESET";
+            case CMD_ADMIN_LOGIN:
+                return "CMD_ADMIN_LOGIN";
+            case CMD_ADMIN_ENTER_IBEACON:
+                return "CMD_ADMIN_ENTER_IBEACON";
+            case CMD_W_ENABLE_SENSOR_DATA:
+                return "CMD_W_ENABLE_SENSOR_DATA";
+            case CMD_R_ENABLE_SENSOR_DATA:
+                return "CMD_R_ENABLE_SENSOR_DATA";
+            case CMD_W_REST_FREQ:
+                return "CMD_W_REST_FREQ";
+            case CMD_R_REST_FREQ:
+                return "CMD_R_REST_FREQ";
+            case CMD_W_ENABLE_ADV_STEPS:
+                return "CMD_W_ENABLE_ADV_STEPS";
+            case CMD_R_ENABLE_ADV_STEPS:
+                return "CMD_R_ENABLE_ADV_STEPS";
+            case CMD_W_ENABLE_ALARM:
+                return "CMD_W_ENABLE_ALARM";
+            case CMD_R_ENABLE_ALARM:
+                return "CMD_R_ENABLE_ALARM";
+            case CMD_W_DISABLE_ALARM_SIGNALS:
+                return "CMD_W_DISABLE_ALARM_SIGNALS";
+            case CMD_R_DISABLE_ALARM_SIGNALS:
+                return "CMD_R_DISABLE_ALARM_SIGNALS";
+            case CMD_W_GSENSOR_SETTING:
+                return "CMD_W_GSENSOR_SETTING";
+            case CMD_R_GSENSOR_SETTING:
+                return "CMD_R_GSENSOR_SETTING";
+            case CMD_R_LINE_INFO:
+                return "CMD_R_LINE_INFO";
+            case CMD_W_LINE_INFO:
+                return "CMD_W_LINE_INFO";
+            case CMD_R_SAVE_DATA_COUNT:
+                return "CMD_R_SAVE_DATA_COUNT";
+            case CMD_R_SAVE_DATA:
+                return "CMD_R_SAVE_DATA";
+            case CMD_R_RESET_SAVE_DATA_COUNT:
+                return "CMD_R_RESET_SAVE_DATA_COUNT";
+            case CMD_W_REMOTE_ID:
+                return "CMD_W_REMOTE_ID";
+            case CMD_R_REMOTE_ID:
+                return "CMD_R_REMOTE_ID";
+            case CMD_W_ADV_INFO:
+                return "CMD_W_ADV_INFO";
+            case CMD_R_ADV_INFO:
+                return "CMD_R_ADV_INFO";
+            case CMD_R_SIGNIN_USERID:
+                return "CMD_R_SIGNIN_USERID";
+            case CMD_W_SIGNIN_USERID:
+                return "CMD_W_SIGNIN_USERID";
+            case CMD_R_SIGNIN_HWID:
+                return "CMD_R_SIGNIN_HWID";
+            case CMD_W_SIGNIN_HWID:
+                return "CMD_W_SIGNIN_HWID";
+            case CMD_R_SIGNIN_AESKEY:
+                return "CMD_R_SIGNIN_AESKEY";
+            case CMD_W_SIGNIN_AESKEY:
+                return "CMD_W_SIGNIN_AESKEY";
+            case CMD_R_ENABLE_LOW_BATTERY_LED:
+                return "CMD_R_ENABLE_LOW_BATTERY_LED";
+            case CMD_W_ENABLE_LOW_BATTERY_LED:
+                return "CMD_W_ENABLE_LOW_BATTERY_LED";
+            case ACK_SUCCESS:
+                return "ACK_SUCCESS";
+            case ERR_ERROR:
+                return "ERR_ERROR";
+            case ERR_ACC_UUID:
+                return "ERR_ACC_UUID";
+            case ERR_AUTH:
+                return "ERR_AUTH";
+            case ERR_BEACON_UUID:
+                return "ERR_BEACON_UUID";
+            case ERR_ACC_FREE:
+                return "ERR_ACC_FREE";
+            case ERR_ACC_NOT_MATCH:
+                return "ERR_ACC_NOT_MATCH";
+            case ERR_SYNTAX:
+                return "ERR_SYNTAX";
+            case ERR_CMD_NOT_FOUND:
+                return "ERR_CMD_NOT_FOUND";
+            default:
+                return "UNKNOWN_CMD_0x" + String.format("%02X", cmd);
+        }
+    }
 }

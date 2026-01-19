@@ -13,6 +13,7 @@ import android.content.Context;
 
 import com.THLight.BLE.USBeacon.Writer.Simple.entity.command.UsBeaconCommand;
 import com.THLight.BLE.USBeacon.Writer.Simple.util.BytesUtil;
+import com.THLight.BLE.USBeacon.Writer.Simple.util.LogUtil;
 import com.THLight.BLE.USBeacon.Writer.Simple.util.StringUtil;
 
 import java.lang.reflect.Field;
@@ -176,6 +177,10 @@ public class BluetoothConnectDeviceManager extends BluetoothGattCallback {
 
     public void addCommandToQueue(final byte[]... data) { // 新增命令至列表
         for (byte[] command : data) {
+            if (command != null && command.length > 1) {
+                String cmdName = UsBeaconCommand.getCommandName(command[1]);
+                LogUtil.log("BLE_CMD", "name=" + cmdName + " raw=" + BytesUtil.getHexString(command));
+            }
             this.gattWriteCommandList.add(generateEncryptData(command));
         }
     }
@@ -186,6 +191,7 @@ public class BluetoothConnectDeviceManager extends BluetoothGattCallback {
 
     public void executeCommandTask() { // 執行列表中的命令 , 依序跑完直至為空
         System.out.println("ConnectBLE Command executeCommandTask gattWriteCommandList  : " + gattWriteCommandList.size() + this.commandType);
+        LogUtil.log("BLE_QUEUE", "size=" + gattWriteCommandList.size() + " type=" + this.commandType);
         if (isBlueToothConnected() && gattWriteCommandList.size() > 0) {
             commandWriteData(gattWriteCommandList.get(0));
         } else {

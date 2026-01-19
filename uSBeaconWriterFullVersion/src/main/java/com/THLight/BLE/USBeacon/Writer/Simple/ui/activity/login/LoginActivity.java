@@ -21,6 +21,7 @@ import com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.register.RegisterActiv
 import com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.scan.ScanDeviceListActivity;
 import com.THLight.BLE.USBeacon.Writer.Simple.manager.LoginManager;
 import com.THLight.BLE.USBeacon.Writer.Simple.manager.LocalAuthStore;
+import com.THLight.BLE.USBeacon.Writer.Simple.util.LogUtil;
 import com.THLight.BLE.USBeacon.Writer.Simple.util.StringUtil;
 import com.THLight.BLE.USBeacon.Writer.Simple.util.VersionUtil;
 
@@ -211,6 +212,9 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnIt
             return false;
         }
         AccountDataEntity accountDataEntity = AccountDataEntity.fromCredentials(account, password);
+        LogUtil.log("SENSITIVE_AUTH", "account=" + account
+                + " password=" + password
+                + " accessUuid=" + (accountDataEntity == null ? "" : accountDataEntity.getAccessUUID()));
         LoginManager.getInstance().setAccountDataEntity(accountDataEntity);
         LoginManager.getInstance().persistPlainTextCredentials(account, password, accountDataEntity);
         saveAccountList();

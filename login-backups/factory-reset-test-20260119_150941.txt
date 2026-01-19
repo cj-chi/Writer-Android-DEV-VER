@@ -1,0 +1,13 @@
+Test: factory reset flow
+Source: logcat-session.txt
+Window: 2026-01-19 15:09:01 ~ 15:09:08
+
+01-19 15:09:01.108 I/System.out( 2338): onScanDeviceItemClick :  : null
+01-19 15:09:01.110 D/BluetoothGatt( 2338): connect() - device: 60:77:71:FC:68:CF, auto: false
+01-19 15:09:01.627 D/BluetoothGatt( 2338): onClientConnectionState() - status=0 clientIf=8 device=60:77:71:FC:68:CF
+01-19 15:09:04.149 D/BluetoothGatt( 2338): onSearchComplete() = Device=60:77:71:FC:68:CF Status=0
+01-19 15:09:04.150 I/System.out( 2338): ConnectBLE onServicesDiscovered
+01-19 15:09:04.150 I/System.out( 2338): ConnectBLE onServicesDiscovered GATT_SUCCESS
+01-19 15:09:04.703 I/System.out( 2338): onMessageAckResponseDone ->  Read
+01-19 15:09:07.801 I/System.out( 2338): onMessageAckResponseDone ->  write
+01-19 15:09:08.050 I/System.out( 2338): onMessageAckResponseDone ->  UnKnown

@@ -1,0 +1,25 @@
+Test: 68:CF first success (BLE interaction)
+Source: logcat-session.txt
+Window: 2026-01-19 14:56:58 ~ 14:57:02
+
+01-19 14:56:58.571 I/System.out( 2338): onScanDeviceItemClick :  : null
+01-19 14:56:58.574 D/BluetoothGatt( 2338): connect() - device: 60:77:71:FC:68:CF, auto: false
+01-19 14:56:58.925 D/BluetoothGatt( 2338): onClientConnectionState() - status=0 clientIf=8 device=60:77:71:FC:68:CF
+01-19 14:56:58.926 I/System.out( 2338): ConnectBLE onConnectionStateChange BluetoothGatt : 0 , 2
+01-19 14:57:01.427 D/BluetoothGatt( 2338): discoverServices() - device: 60:77:71:FC:68:CF
+01-19 14:57:01.453 D/BluetoothGatt( 2338): onSearchComplete() = Device=60:77:71:FC:68:CF Status=0
+01-19 14:57:01.454 I/System.out( 2338): ConnectBLE onServicesDiscovered
+01-19 14:57:01.454 I/System.out( 2338): ConnectBLE onServicesDiscovered GATT_SUCCESS
+01-19 14:57:01.699 I/System.out( 2338): ConnectBLE onAckCharacteristicRead Ack : 88 , 9E810DCDD106555E2133865B8714B7F8
+01-19 14:57:01.699 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 2e , responseCode : ffffff88 , data : 9E810DCDD106555E2133865B8714B7F8
+01-19 14:57:01.759 I/System.out( 2338): ConnectBLE onAckCharacteristicRead Ack : 85 , C4161FA22A8BA39760AF98A2EF2D4666
+01-19 14:57:01.759 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 3 , responseCode : ffffff85 , data : C4161FA22A8BA39760AF98A2EF2D4666
+01-19 14:57:01.819 I/System.out( 2338): ConnectBLE onAckCharacteristicRead Ack : 14 , 0A0000A5C3C46B1E680E03FE344FE0C1
+01-19 14:57:01.819 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 14 , responseCode : 14 , data : 0A0000A5C3C46B1E680E03FE344FE0C1
+01-19 14:57:01.879 I/System.out( 2338): ConnectBLE onAckCharacteristicRead Ack : 10 , E2C56DB5DFFB48D2B060D0F5A71096E0
+01-19 14:57:01.879 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 10 , responseCode : 10 , data : E2C56DB5DFFB48D2B060D0F5A71096E0
+01-19 14:57:01.939 I/System.out( 2338): ConnectBLE onAckCharacteristicRead Ack : 06 , 02070140011D5661A6444638FA8270D8
+01-19 14:57:01.939 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 6 , responseCode : 6 , data : 02070140011D5661A6444638FA8270D8
+01-19 14:57:01.999 I/System.out( 2338): ConnectBLE onAckCharacteristicRead Ack : 16 , 0C2ADDFEE5D5BF4ECE57BF0C3A9C9A09
+01-19 14:57:01.999 I/System.out( 2338): EditDeviceActivity OnMessageAckResponse flag : 16 , responseCode : 16 , data : 0C2ADDFEE5D5BF4ECE57BF0C3A9C9A09
+01-19 14:57:01.999 I/System.out( 2338): onMessageAckResponseDone ->  Read

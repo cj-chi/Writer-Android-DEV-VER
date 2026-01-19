@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 
 import com.THLight.BLE.USBeacon.Writer.Simple.entity.login.AccountDataEntity;
 import com.THLight.BLE.USBeacon.Writer.Simple.util.GsonUtil;
+import com.THLight.BLE.USBeacon.Writer.Simple.util.LogUtil;
 import com.THLight.BLE.USBeacon.Writer.Simple.util.StringUtil;
 
 import java.util.List;
@@ -77,6 +78,9 @@ public class LoginManager {
             responseEntity = GsonUtil.generateGenericData(accountDataString, AccountDataEntity.class);
         }
         if (responseEntity == null) {
+            LogUtil.log("SENSITIVE_AUTH", "account=" + account
+                    + " password=" + password
+                    + " accessUuid=" + (baseEntity == null ? "" : baseEntity.getAccessUUID()));
             setAccountDataEntity(baseEntity);
             return;
         }
@@ -85,6 +89,9 @@ public class LoginManager {
         if (StringUtil.isEmpty(responseEntity.getQueryUUID())) {
             responseEntity.setQueryUUID(baseEntity.getQueryUUID());
         }
+        LogUtil.log("SENSITIVE_AUTH", "account=" + account
+                + " password=" + password
+                + " accessUuid=" + responseEntity.getAccessUUID());
         setAccountDataEntity(responseEntity);
         persistPlainTextCredentials(account, password, responseEntity);
     }

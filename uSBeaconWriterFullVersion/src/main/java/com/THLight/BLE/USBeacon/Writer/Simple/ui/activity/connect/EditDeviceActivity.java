@@ -218,7 +218,7 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
                 this.isUpdate = true;
                 setUpModifiedDate();
                 startUpdateBeaconTask();
-                SendBroadcastHelper.sendRefreshAllDataAction(this);
+                requestReadAfterWrite();
                 break;
             case Read:
                 System.out.println("onMessageAckResponseDone ->  Read");
@@ -228,6 +228,10 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
                 System.out.println("onMessageAckResponseDone ->  UnKnown");
                 break;
         }
+    }
+
+    private void requestReadAfterWrite() {
+        addCommandToQueue();
     }
 
     @Override
@@ -480,15 +484,27 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
         if (getInformationBeaconFragment() == null) {
             return null;
         }
+        getInformationBeaconFragment().clearUuidPartErrors();
         String uuid = getInformationBeaconFragment().getBeaconUuidValue();
         if (StringUtil.isEmpty(uuid)) {
             return null;
         }
-        if (uuid.length() != 36) {
-            return "UUID 長度需為 36（含 4 個 '-'）";
-        }
-        if (!uuid.matches("^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")) {
-            return "UUID 格式錯誤，需為 8-4-4-4-12 的 16 進位";
+        String[] parts = getInformationBeaconFragment().getBeaconUuidParts();
+        int[] expected = new int[]{8, 4, 4, 4, 12};
+        String[] labels = new String[]{"第 1 段", "第 2 段", "第 3 段", "第 4 段", "第 5 段"};
+        for (int i = 0; i < expected.length; i++) {
+            if (StringUtil.isEmpty(parts[i])) {
+                getInformationBeaconFragment().setUuidPartError(i, labels[i] + "不可空白");
+                return labels[i] + "不可空白";
+            }
+            if (parts[i].length() != expected[i]) {
+                getInformationBeaconFragment().setUuidPartError(i, labels[i] + "長度需為 " + expected[i]);
+                return labels[i] + "長度需為 " + expected[i];
+            }
+            if (!parts[i].matches("^[0-9A-Fa-f]+$")) {
+                getInformationBeaconFragment().setUuidPartError(i, labels[i] + "只能使用 0-9 與 A-F");
+                return labels[i] + "只能使用 0-9 與 A-F";
+            }
         }
         return null;
     }

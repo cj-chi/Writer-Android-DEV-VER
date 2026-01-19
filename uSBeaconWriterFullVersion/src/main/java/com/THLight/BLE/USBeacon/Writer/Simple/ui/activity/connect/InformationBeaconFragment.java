@@ -1,6 +1,8 @@
 package com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.connect;
 
 import android.os.Bundle;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -104,8 +106,33 @@ public class InformationBeaconFragment extends BaseFragment implements OnClickLi
         if (getActivity() == null || getContentView() == null || bluetoothDeviceItemEntity == null) {
             return;
         }
-        EditText editText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidEditText);
-        editText.setText(bluetoothDeviceItemEntity.getUuid());
+        EditText part1EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart1EditText);
+        EditText part2EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart2EditText);
+        EditText part3EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart3EditText);
+        EditText part4EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart4EditText);
+        EditText part5EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart5EditText);
+        applyUuidPartFilters(part1EditText, 8);
+        applyUuidPartFilters(part2EditText, 4);
+        applyUuidPartFilters(part3EditText, 4);
+        applyUuidPartFilters(part4EditText, 4);
+        applyUuidPartFilters(part5EditText, 12);
+
+        String uuid = bluetoothDeviceItemEntity.getUuid();
+        if (StringUtil.isEmpty(uuid)) {
+            clearUuidParts(part1EditText, part2EditText, part3EditText, part4EditText, part5EditText);
+            return;
+        }
+        String raw = uuid.replace("-", "").trim();
+        if (raw.length() != 32) {
+            clearUuidParts(part1EditText, part2EditText, part3EditText, part4EditText, part5EditText);
+            return;
+        }
+        raw = raw.toUpperCase();
+        part1EditText.setText(raw.substring(0, 8));
+        part2EditText.setText(raw.substring(8, 12));
+        part3EditText.setText(raw.substring(12, 16));
+        part4EditText.setText(raw.substring(16, 20));
+        part5EditText.setText(raw.substring(20, 32));
     }
 
     private void bindMajorEditText() {
@@ -222,9 +249,110 @@ public class InformationBeaconFragment extends BaseFragment implements OnClickLi
     }
 
     protected String getBeaconUuidValue() {
-        EditText editText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidEditText);
-        String value = editText.getText() == null ? "" : editText.getText().toString().trim();
-        return StringUtil.isEmpty(value) ? "" : value;
+        EditText part1EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart1EditText);
+        EditText part2EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart2EditText);
+        EditText part3EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart3EditText);
+        EditText part4EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart4EditText);
+        EditText part5EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart5EditText);
+        String part1 = getUuidPartValue(part1EditText);
+        String part2 = getUuidPartValue(part2EditText);
+        String part3 = getUuidPartValue(part3EditText);
+        String part4 = getUuidPartValue(part4EditText);
+        String part5 = getUuidPartValue(part5EditText);
+        if (StringUtil.isEmpty(part1) && StringUtil.isEmpty(part2)
+                && StringUtil.isEmpty(part3) && StringUtil.isEmpty(part4)
+                && StringUtil.isEmpty(part5)) {
+            return "";
+        }
+        return part1 + "-" + part2 + "-" + part3 + "-" + part4 + "-" + part5;
+    }
+
+    protected String[] getBeaconUuidParts() {
+        EditText part1EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart1EditText);
+        EditText part2EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart2EditText);
+        EditText part3EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart3EditText);
+        EditText part4EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart4EditText);
+        EditText part5EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart5EditText);
+        return new String[]{
+                getUuidPartValue(part1EditText),
+                getUuidPartValue(part2EditText),
+                getUuidPartValue(part3EditText),
+                getUuidPartValue(part4EditText),
+                getUuidPartValue(part5EditText)
+        };
+    }
+
+    protected void clearUuidPartErrors() {
+        EditText part1EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart1EditText);
+        EditText part2EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart2EditText);
+        EditText part3EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart3EditText);
+        EditText part4EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart4EditText);
+        EditText part5EditText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidPart5EditText);
+        part1EditText.setError(null);
+        part2EditText.setError(null);
+        part3EditText.setError(null);
+        part4EditText.setError(null);
+        part5EditText.setError(null);
+    }
+
+    protected void setUuidPartError(int index, String message) {
+        int viewId;
+        switch (index) {
+            case 0:
+                viewId = R.id.fragmentInformationBeacon_uuidPart1EditText;
+                break;
+            case 1:
+                viewId = R.id.fragmentInformationBeacon_uuidPart2EditText;
+                break;
+            case 2:
+                viewId = R.id.fragmentInformationBeacon_uuidPart3EditText;
+                break;
+            case 3:
+                viewId = R.id.fragmentInformationBeacon_uuidPart4EditText;
+                break;
+            default:
+                viewId = R.id.fragmentInformationBeacon_uuidPart5EditText;
+                break;
+        }
+        EditText editText = getContentView().findViewById(viewId);
+        editText.setError(message);
+        editText.requestFocus();
+    }
+
+    private String getUuidPartValue(EditText editText) {
+        if (editText.getText() == null) {
+            return "";
+        }
+        String value = editText.getText().toString().trim();
+        return StringUtil.isEmpty(value) ? "" : value.toUpperCase();
+    }
+
+    private void applyUuidPartFilters(EditText editText, int maxLength) {
+        InputFilter hexFilter = new InputFilter() {
+            @Override
+            public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
+                for (int i = start; i < end; i++) {
+                    char c = source.charAt(i);
+                    if (!((c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F'))) {
+                        return "";
+                    }
+                }
+                return null;
+            }
+        };
+        editText.setFilters(new InputFilter[]{
+                new InputFilter.AllCaps(),
+                new InputFilter.LengthFilter(maxLength),
+                hexFilter
+        });
+    }
+
+    private void clearUuidParts(EditText part1, EditText part2, EditText part3, EditText part4, EditText part5) {
+        part1.setText("");
+        part2.setText("");
+        part3.setText("");
+        part4.setText("");
+        part5.setText("");
     }
 
     private int checkMajorMinorValue(String textString) { // 回傳前先檢查是否超出指定邊界

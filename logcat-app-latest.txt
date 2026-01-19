@@ -1,0 +1,474 @@
+--------- beginning of system
+01-19 08:39:01.134 I/Quality (21992): Skipped: false 1 cost 18.061846 refreshRate 16891463 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:01.152 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.167590865
+01-19 08:39:01.193 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.254949423
+01-19 08:39:01.236 I/Quality (21992): Skipped: false 4 cost 72.85706 refreshRate 16842212 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:01.264 I/Quality (21992): Skipped: false 1 cost 18.223888 refreshRate 16739783 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:06.116 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:39:06.181 I/Quality (21992): Skipped: false 3 cost 57.635902 refreshRate 16707832 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:10.247 I/Quality (21992): Skipped: false 2 cost 49.23743 refreshRate 16707734 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:10.291 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.167590865
+01-19 08:39:10.329 I/Quality (21992): Skipped: false 4 cost 81.20471 refreshRate 17017690 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:13.469 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:39:13.540 I/Quality (21992): Skipped: false 3 cost 65.58008 refreshRate 16710316 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:13.948 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.122251914
+01-19 08:39:14.056 I/Quality (21992): Skipped: false 23 cost 398.35165 refreshRate 16694239 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:14.112 I/Quality (21992): Skipped: false 3 cost 53.40085 refreshRate 16702165 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:17.148 I/Quality (21992): Skipped: false 1 cost 17.094152 refreshRate 16666667 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:17.189 I/Quality (21992): Skipped: false 1 cost 25.462124 refreshRate 16710771 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:18.306 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:39:20.748 I/Quality (21992): Skipped: false 3 cost 56.69428 refreshRate 16706852 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:20.768 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.31872267
+01-19 08:39:20.799 I/Quality (21992): Skipped: false 2 cost 41.110153 refreshRate 16706841 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:22.176 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:39:22.205 I/Quality (21992): Skipped: false 5 cost 95.51085 refreshRate 16707887 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:22.227 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.148583659
+01-19 08:39:22.540 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:39:22.600 I/Quality (21992): Skipped: false 3 cost 54.140858 refreshRate 16704412 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:22.647 I/Quality (21992): Skipped: false 2 cost 33.84025 refreshRate 16706888 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:22.698 I/Quality (21992): Skipped: false 2 cost 35.671196 refreshRate 16708204 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:23.668 I/Quality (21992): Skipped: false 1 cost 19.657423 refreshRate 16705906 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:24.262 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:39:24.275 I/Quality (21992): Skipped: true 2 cost 41.218197 refreshRate 16710935 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:39:25.239 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:39:26.086 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:39:27.837 D/ActivityThread(21992): do gfx trim 40 success
+01-19 08:40:13.053 I/Quality (21992): Skipped: false 1 cost 17.780384 refreshRate 16908334 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:13.071 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.192576901
+01-19 08:40:13.110 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.84572547
+01-19 08:40:13.148 I/Quality (21992): Skipped: false 3 cost 64.606186 refreshRate 16852628 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:18.038 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:40:18.087 I/Quality (21992): Skipped: false 2 cost 42.33248 refreshRate 16704412 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:19.498 I/Quality (21992): Skipped: false 2 cost 36.18043 refreshRate 16708775 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:19.527 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.192576901
+01-19 08:40:19.551 I/Quality (21992): Skipped: false 2 cost 38.896145 refreshRate 16997356 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:22.792 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:40:22.859 I/Quality (21992): Skipped: false 3 cost 53.497383 refreshRate 16713232 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:22.961 I/Quality (21992): Skipped: false 1 cost 19.245846 refreshRate 16703963 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:23.252 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.239950164
+01-19 08:40:23.361 I/Quality (21992): Skipped: false 23 cost 387.94144 refreshRate 16700538 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:23.422 I/Quality (21992): Skipped: false 2 cost 48.293964 refreshRate 16701030 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:23.457 I/Quality (21992): Skipped: true 2 cost 33.69595 refreshRate 16702593 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:26.636 I/Quality (21992): Skipped: false 1 cost 23.3008 refreshRate 16705382 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:28.107 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:40:30.322 I/Quality (21992): Skipped: false 4 cost 81.70664 refreshRate 16708780 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:30.350 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.265970980
+01-19 08:40:30.390 I/Quality (21992): Skipped: false 4 cost 66.83814 refreshRate 16708616 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:31.513 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:40:31.539 I/Quality (21992): Skipped: false 8 cost 146.15909 refreshRate 16706365 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:31.556 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.160908676
+01-19 08:40:31.579 I/Quality (21992): Skipped: false 1 cost 19.104134 refreshRate 16706272 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:31.873 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:40:31.940 I/Quality (21992): Skipped: false 3 cost 62.955357 refreshRate 16707582 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:31.987 I/Quality (21992): Skipped: false 2 cost 42.9671 refreshRate 16707787 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:32.023 I/Quality (21992): Skipped: false 1 cost 29.249464 refreshRate 16705061 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:33.876 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:40:33.891 I/Quality (21992): Skipped: true 3 cost 59.303864 refreshRate 16708614 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:35.417 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:40:35.733 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:40:38.661 I/Quality (21992): Skipped: false 1 cost 19.126461 refreshRate 16853619 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:38.679 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.52761526
+01-19 08:40:38.715 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.248960956
+01-19 08:40:38.758 I/Quality (21992): Skipped: false 3 cost 64.14882 refreshRate 16794112 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:43.642 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:40:43.688 I/Quality (21992): Skipped: false 2 cost 49.69707 refreshRate 16700338 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:40:45.936 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:40:48.523 D/ActivityThread(21992): do gfx trim 40 success
+01-19 08:44:38.365 I/Quality (21992): Skipped: false 1 cost 19.292616 refreshRate 16852683 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:38.386 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.238240636
+01-19 08:44:38.437 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.44113074
+01-19 08:44:38.486 I/Quality (21992): Skipped: false 5 cost 89.68236 refreshRate 16792379 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:43.345 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:44:43.404 I/Quality (21992): Skipped: false 3 cost 63.051144 refreshRate 16705925 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:45.958 I/Quality (21992): Skipped: false 1 cost 20.232994 refreshRate 16760111 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:45.982 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.238240636
+01-19 08:44:46.018 I/Quality (21992): Skipped: false 3 cost 52.635075 refreshRate 16742150 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:49.097 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:44:49.165 I/Quality (21992): Skipped: false 3 cost 60.004303 refreshRate 16709825 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:49.561 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.49732939
+01-19 08:44:49.668 I/Quality (21992): Skipped: false 22 cost 379.143 refreshRate 16698460 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:49.722 I/Quality (21992): Skipped: false 2 cost 49.35397 refreshRate 16694422 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:49.751 I/Quality (21992): Skipped: true 1 cost 28.113283 refreshRate 16702998 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:51.183 I/Quality (21992): Skipped: false 1 cost 23.430763 refreshRate 16692863 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:51.228 I/Quality (21992): Skipped: false 1 cost 17.947723 refreshRate 16703145 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:51.264 I/Quality (21992): Skipped: false 1 cost 21.236555 refreshRate 16700529 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:51.276 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:44:51.381 I/Quality (21992): Skipped: false 6 cost 104.603615 refreshRate 16698432 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:51.487 I/Quality (21992): Skipped: false 5 cost 93.162766 refreshRate 16704231 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:51.539 I/Quality (21992): Skipped: false 2 cost 45.691303 refreshRate 16703213 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:52.449 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:44:52.736 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:44:52.766 I/Quality (21992): Skipped: false 1 cost 18.98426 refreshRate 16719444 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+--------- beginning of main
+01-19 08:44:54.472 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:44:54.472 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:44:54.472 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:44:54.479 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:44:54.479 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:44:54.479 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:44:54.497 D/WindowManager(21992): Add to mViews: DecorView@c0b1df[EditDeviceActivity],pkg= com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:54.515 D/ViewRootImplExtImpl(21992): onDisplayChanged -1 for VRI android.view.ViewRootImpl@8a88cfb
+01-19 08:44:54.517 D/InputEventReceiver(21992): Input log is disabled
+01-19 08:44:54.519 I/Quality (21992): Skipped: false 4 cost 68.69731 refreshRate 16703664 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:54.552 D/BufferQueueConsumer(21992): [](id:55e800000048,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:44:54.552 E/IPCThreadState(21992): attemptIncStrongHandle(142): Not supported
+01-19 08:44:54.552 E/IPCThreadState(21992): attemptIncStrongHandle(140): Not supported
+01-19 08:44:54.554 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.12628447
+01-19 08:44:54.561 D/VRI[EditDeviceActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:44:54.578 D/BLASTBufferQueue(21992): [VRI[EditDeviceActivity]#72](f:0,a:1) acquireNextBufferLocked size=812x528 mFrameNumber=1 applyTransaction=true mTimestamp=192245138704381(auto) mPendingTransactions.size=0 graphicBufferId=94454920774180 transform=0
+01-19 08:44:54.578 D/VRI[EditDeviceActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:44:54.579 W/Parcel  (21992): Expecting binder but got null!
+01-19 08:44:54.579 D/VRI[EditDeviceActivity](21992): draw finished.
+01-19 08:44:54.582 D/VRI[EditDeviceActivity](21992): onFocusEvent false
+01-19 08:44:54.588 I/Quality (21992): Skipped: false 3 cost 54.003098 refreshRate 16701801 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:54.606 D/VRI[EditDeviceActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:44:54.614 D/VRI[EditDeviceActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=3 didProduceBuffer=true syncBuffer=false
+01-19 08:44:54.614 D/VRI[EditDeviceActivity](21992): draw finished.
+01-19 08:44:54.645 D/VRI[EditDeviceActivity](21992): onFocusEvent true
+01-19 08:44:55.528 V/AutofillManager(21992): requestHideFillUi(null): anchor = null
+01-19 08:44:55.531 D/OplusSystemUINavigationGestureExtImpl(21992): regionString = null
+01-19 08:44:55.685 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:44:55.685 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:44:55.685 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:44:55.690 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:44:55.690 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:44:55.690 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:44:55.704 D/WindowManager(21992): Add to mViews: DecorView@e3c8bbf[EditDeviceActivity],pkg= com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:55.720 D/ViewRootImplExtImpl(21992): onDisplayChanged -1 for VRI android.view.ViewRootImpl@a3824db
+01-19 08:44:55.721 D/InputEventReceiver(21992): Input log is disabled
+01-19 08:44:55.723 I/System.out(21992): ConnectBLE generateEncryptData : 3E046F70706F6F70706F6F70706F6F70706F
+01-19 08:44:55.724 I/System.out(21992): ConnectBLE generateEncryptData : 1D206748A2028A3E4F969709585503F6AD69
+01-19 08:44:55.724 I/System.out(21992): ConnectBLE generateEncryptData : 452100008E2D265DA3E1D62D6E2E0D1E93E3
+01-19 08:44:55.724 I/System.out(21992): ConnectBLE generateEncryptData : 6F22038DCE6702BF1C9CAFBEC503D4B0269C
+01-19 08:44:55.724 I/System.out(21992): ConnectBLE generateEncryptData : EC260CD4175F29601B44916731CAB81AF3EC
+01-19 08:44:55.724 I/System.out(21992): ConnectBLE generateEncryptData : B8240A0000606DC38564FF440C522C813CAA
+01-19 08:44:55.724 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 6Write
+01-19 08:44:55.724 I/System.out(21992): ConnectBLE commandWriteData -- >  EE10BDC1C1BDBDC1C1BDBDC1C1BDBDC1C1BD
+01-19 08:44:55.728 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:44:55.728 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@1849b78
+01-19 08:44:55.728 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:44:55.728 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@3a4f251
+01-19 08:44:55.731 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:44:55.733 D/OpenGLRenderer(21992): endAllActiveAnimators on 0xb400006fc4516200 (RippleDrawable) with handle 0xb400006fcccbdf40
+01-19 08:44:55.747 D/BLASTBufferQueue(21992): [VRI[EditDeviceActivity]#72](f:0,a:1) destructor()
+01-19 08:44:55.747 D/BufferQueueConsumer(21992): [VRI[EditDeviceActivity]#72(BLAST Consumer)72](id:55e800000048,api:0,p:-1,c:21992) disconnect
+01-19 08:44:55.750 I/Quality (21992): Skipped: false 4 cost 79.198784 refreshRate 16714218 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:55.755 I/System.out(21992): ConnectBLE onCharacteristicWrite  : 4 , EE046F70706F6F70706F6F70706F6F70706F
+01-19 08:44:55.773 D/BufferQueueConsumer(21992): [](id:55e800000049,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:44:55.773 E/IPCThreadState(21992): attemptIncStrongHandle(146): Not supported
+01-19 08:44:55.775 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.238848959
+01-19 08:44:55.780 D/VRI[EditDeviceActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:44:55.785 I/System.out(21992): ConnectBLE onCharacteristicRead 0000f002-0000-1000-8000-00805f9b34fb status: 0
+01-19 08:44:55.785 I/System.out(21992): ConnectBLE onAckCharacteristicRead Ack : 80 , 82E7366629280F1C4352DA9A350CF16D
+01-19 08:44:55.785 I/System.out(21992): EditDeviceActivity OnMessageAckResponse flag : 4 , responseCode : ffffff80 , data : 82E7366629280F1C4352DA9A350CF16D
+01-19 08:44:55.785 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 5Write
+01-19 08:44:55.785 I/System.out(21992): ConnectBLE commandWriteData -- >  5985C2ED07A72F9BEA3332ACFDF0A65308CC
+01-19 08:44:55.789 D/BLASTBufferQueue(21992): [VRI[EditDeviceActivity]#73](f:0,a:1) acquireNextBufferLocked size=812x360 mFrameNumber=1 applyTransaction=true mTimestamp=192246350702919(auto) mPendingTransactions.size=0 graphicBufferId=94454920774188 transform=0
+01-19 08:44:55.790 D/VRI[EditDeviceActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:44:55.791 W/Parcel  (21992): Expecting binder but got null!
+01-19 08:44:55.791 D/VRI[EditDeviceActivity](21992): draw finished.
+01-19 08:44:55.795 D/VRI[EditDeviceActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:44:55.803 D/VRI[EditDeviceActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=2 didProduceBuffer=true syncBuffer=false
+01-19 08:44:55.803 D/VRI[EditDeviceActivity](21992): draw finished.
+01-19 08:44:55.815 I/System.out(21992): ConnectBLE onCharacteristicWrite  : 20 , 59206748A2028A3E4F969709585503F6AD69
+01-19 08:44:55.844 D/VRI[EditDeviceActivity](21992): onFocusEvent true
+01-19 08:44:55.845 I/System.out(21992): ConnectBLE onCharacteristicRead 0000f002-0000-1000-8000-00805f9b34fb status: 0
+01-19 08:44:55.845 I/System.out(21992): ConnectBLE onAckCharacteristicRead Ack : 80 , 8DA1867DB55BFA284CBAA2B55DD1224E
+01-19 08:44:55.845 I/System.out(21992): EditDeviceActivity OnMessageAckResponse flag : 20 , responseCode : ffffff80 , data : 8DA1867DB55BFA284CBAA2B55DD1224E
+01-19 08:44:55.845 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 4Write
+01-19 08:44:55.845 I/System.out(21992): ConnectBLE commandWriteData -- >  1684000074C93D170DB77BF7DA25F39D770A
+01-19 08:44:55.874 I/System.out(21992): ConnectBLE onCharacteristicWrite  : 21 , 162100001D724FC543EDDEFDB649FC67DD82
+01-19 08:44:55.905 I/System.out(21992): ConnectBLE onCharacteristicRead 0000f002-0000-1000-8000-00805f9b34fb status: 0
+01-19 08:44:55.905 I/System.out(21992): ConnectBLE onAckCharacteristicRead Ack : 80 , C8E35FF5B664E33C49028D527211F79A
+01-19 08:44:55.906 I/System.out(21992): EditDeviceActivity OnMessageAckResponse flag : 21 , responseCode : ffffff80 , data : C8E35FF5B664E33C49028D527211F79A
+01-19 08:44:55.906 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 3Write
+01-19 08:44:55.906 I/System.out(21992): ConnectBLE commandWriteData -- >  BF88C063EA7A59FA554C50E11E8CF8986295
+01-19 08:44:55.936 I/System.out(21992): ConnectBLE onCharacteristicWrite  : 22 , BF22038DABE965EB553141877832E3628956
+01-19 08:44:55.964 I/System.out(21992): ConnectBLE onCharacteristicRead 0000f002-0000-1000-8000-00805f9b34fb status: 0
+01-19 08:44:55.965 I/System.out(21992): ConnectBLE onAckCharacteristicRead Ack : 80 , C85BF99561346556FDF74571FD7345BC
+01-19 08:44:55.965 I/System.out(21992): EditDeviceActivity OnMessageAckResponse flag : 22 , responseCode : ffffff80 , data : C85BF99561346556FDF74571FD7345BC
+01-19 08:44:55.965 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 2Write
+01-19 08:44:55.965 I/System.out(21992): ConnectBLE commandWriteData -- >  DA983010FDBAD6CFC5F1532772DEC819472D
+01-19 08:44:55.997 I/System.out(21992): ConnectBLE onCharacteristicWrite  : 26 , DA260C047FAEB5F3717CD4C99CB73246D14B
+01-19 08:44:56.025 I/System.out(21992): ConnectBLE onCharacteristicRead 0000f002-0000-1000-8000-00805f9b34fb status: 0
+01-19 08:44:56.025 I/System.out(21992): ConnectBLE onAckCharacteristicRead Ack : 80 , 3C57CC85022368C1C53AB93E4F29ED1B
+01-19 08:44:56.025 I/System.out(21992): EditDeviceActivity OnMessageAckResponse flag : 26 , responseCode : ffffff80 , data : 3C57CC85022368C1C53AB93E4F29ED1B
+01-19 08:44:56.025 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 1Write
+01-19 08:44:56.025 I/System.out(21992): ConnectBLE commandWriteData -- >  CA9028000049614D823B87C1F16314456DB2
+01-19 08:44:56.055 I/System.out(21992): ConnectBLE onCharacteristicWrite  : 24 , CA240A0000525853A0CEE1707CD805515BAC
+01-19 08:44:56.085 I/System.out(21992): ConnectBLE onCharacteristicRead 0000f002-0000-1000-8000-00805f9b34fb status: 0
+01-19 08:44:56.085 I/System.out(21992): ConnectBLE onAckCharacteristicRead Ack : 80 , A0A433AACE806D6BC64318CF7EF8B33D
+01-19 08:44:56.086 I/System.out(21992): EditDeviceActivity OnMessageAckResponse flag : 24 , responseCode : ffffff80 , data : A0A433AACE806D6BC64318CF7EF8B33D
+01-19 08:44:56.086 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 0Write
+01-19 08:44:56.086 I/System.out(21992): onMessageAckResponseDone ->  write
+01-19 08:44:56.089 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:44:56.089 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@7d15645
+01-19 08:44:56.089 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:44:56.089 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@ac8f19a
+01-19 08:44:56.092 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:44:56.101 D/BLASTBufferQueue(21992): [VRI[EditDeviceActivity]#73](f:0,a:1) destructor()
+01-19 08:44:56.101 D/BufferQueueConsumer(21992): [VRI[EditDeviceActivity]#73(BLAST Consumer)73](id:55e800000049,api:0,p:-1,c:21992) disconnect
+01-19 08:44:56.135 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:44:56.136 V/AutofillManager(21992): notifyValueChanged(1073741824): ignoring on state FINISHED
+01-19 08:44:56.137 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:44:56.137 V/AutofillManager(21992): notifyValueChanged(1073741825): ignoring on state FINISHED
+01-19 08:44:56.137 I/System.out(21992): bluetoothDeviceItemEntity.getBatteryPower() : 329
+01-19 08:44:56.138 I/System.out(21992): AES setting: false
+01-19 08:44:56.140 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:44:56.140 V/AutofillManager(21992): notifyValueChanged(1073741826): ignoring on state FINISHED
+01-19 08:44:56.142 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:44:56.142 V/AutofillManager(21992): notifyValueChanged(1073741828): ignoring on state FINISHED
+01-19 08:44:56.145 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:44:56.145 V/AutofillManager(21992): notifyValueChanged(1073741843): ignoring on state FINISHED
+01-19 08:44:56.147 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:44:56.147 V/AutofillManager(21992): notifyValueChanged(1073741842): ignoring on state FINISHED
+01-19 08:44:56.148 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:44:56.149 V/AutofillManager(21992): notifyValueChanged(1073741831): ignoring on state FINISHED
+01-19 08:44:56.150 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:44:56.150 V/AutofillManager(21992): notifyValueChanged(1073741832): ignoring on state FINISHED
+01-19 08:44:56.150 I/System.out(21992): getLowBatteryLedStatus: 0
+01-19 08:44:56.152 D/VRI[EditDeviceActivity](21992): onFocusEvent true
+01-19 08:44:56.152 I/Quality (21992): Skipped: false 2 cost 47.963306 refreshRate 16703471 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:56.162 V/AutofillManager(21992): notifyValueChanged(1073741830): ignoring on state FINISHED
+01-19 08:44:56.167 D/CursorFeedback(21992): getExtraCursorWidth
+01-19 08:44:56.167 D/CursorFeedback(21992): getExtraLeftOffset
+01-19 08:44:56.179 D/WindowManager(21992): Add to mViews: android.widget.FrameLayout{c90f54a V.E...... ......I. 0,0-0,0 #7f09023d app:id/toastMessage_frameLayout},pkg= com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:56.190 D/ViewRootImplExtImpl(21992): onDisplayChanged -1 for VRI android.view.ViewRootImpl@1711c16
+01-19 08:44:56.192 D/InputEventReceiver(21992): Input log is disabled
+01-19 08:44:56.201 I/Quality (21992): Skipped: false 2 cost 46.283104 refreshRate 16708800 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:56.215 D/BufferQueueConsumer(21992): [](id:55e80000004a,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:44:56.215 E/IPCThreadState(21992): attemptIncStrongHandle(143): Not supported
+01-19 08:44:56.219 D/VRI[Toast](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:44:56.229 D/BLASTBufferQueue(21992): [VRI[Toast]#74](f:0,a:1) acquireNextBufferLocked size=176x102 mFrameNumber=1 applyTransaction=true mTimestamp=192246790049381(auto) mPendingTransactions.size=0 graphicBufferId=94454920774194 transform=0
+01-19 08:44:56.230 D/VRI[Toast](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:44:56.230 W/Parcel  (21992): Expecting binder but got null!
+01-19 08:44:56.231 D/VRI[Toast](21992): draw finished.
+01-19 08:44:56.239 I/Quality (21992): Skipped: false 2 cost 33.600353 refreshRate 16707295 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:56.262 D/VRI[Toast](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:44:56.271 D/VRI[Toast](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=3 didProduceBuffer=true syncBuffer=false
+01-19 08:44:56.271 D/VRI[Toast](21992): draw finished.
+01-19 08:44:57.477 D/VRI[ScanDeviceListActivity](21992): dispatchAppVisibility visible:true
+01-19 08:44:57.490 D/VRI[ScanDeviceListActivity](21992): setWindowStopped stopped:false
+01-19 08:44:57.496 I/System.out(21992): SettingCallBack : {"batteryPower":329,"broadcastFrequency":10,"connectWindowDelay":0,"deviceName":"USBeacon","deviceType":0,"firmWare":"2.7","hwId":"","isDisableAlarm":false,"lowBatteryLedStatus":0,"macAddress":"60:77:71:FC:6B:9D","major":"0","meterRssi":"-48","minor":"909","restBroadcastFrequency":0,"restTime":0,"rssi":"-41","sensorSampling":0,"sensorSensitive":0,"sensorStatus":0,"trackerStatus":0,"txPowerIndex":12,"userId":"","uuid":"6748A202-8A3E-4F96-9709-585503F6AD69","versionCharacteristicInt":27}
+01-19 08:44:57.499 D/VRI[EditDeviceActivity](21992): onFocusEvent false
+01-19 08:44:57.515 D/BufferQueueConsumer(21992): [](id:55e80000004b,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:44:57.524 I/System.out(21992): getItemTypeIndexByPosition -----> foreach 0 , position : 0 , preItemCount : 0 , count : 2 , itemType : 2
+01-19 08:44:57.528 D/VRI[ScanDeviceListActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:44:57.542 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#75](f:0,a:1) acquireNextBufferLocked size=720x1600 mFrameNumber=1 applyTransaction=true mTimestamp=192248103490535(auto) mPendingTransactions.size=0 graphicBufferId=94454920774204 transform=0
+01-19 08:44:57.543 D/VRI[ScanDeviceListActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:44:57.544 D/VRI[ScanDeviceListActivity](21992): draw finished.
+01-19 08:44:57.650 D/VRI[ScanDeviceListActivity](21992): onFocusEvent true
+01-19 08:44:58.069 D/VRI[EditDeviceActivity](21992): dispatchAppVisibility visible:false
+01-19 08:44:58.098 D/BLASTBufferQueue(21992): [VRI[EditDeviceActivity]#68](f:0,a:1) destructor()
+01-19 08:44:58.098 D/BufferQueueConsumer(21992): [VRI[EditDeviceActivity]#68(BLAST Consumer)68](id:55e800000044,api:0,p:-1,c:21992) disconnect
+01-19 08:44:58.105 D/VRI[EditDeviceActivity](21992): setWindowStopped stopped:true
+01-19 08:44:58.106 V/AutofillManager(21992): updateSessionLocked(): id=null, bounds=null, value=null, action=5, flags=0
+01-19 08:44:58.111 D/AutofillManager(21992): onActivityFinishing(): calling cancelLocked()
+01-19 08:44:58.112 V/AutofillManager(21992): cancelSessionLocked(): FINISHED
+01-19 08:44:58.117 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@f608d2d
+01-19 08:44:58.117 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@4ee0262
+01-19 08:44:58.117 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@7dd0ff3
+01-19 08:44:58.117 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@cee04b0
+01-19 08:44:58.121 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@66334e5
+01-19 08:44:58.121 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@797bba
+01-19 08:44:58.121 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@3488a6b
+01-19 08:44:58.121 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@9d1b9c8
+01-19 08:44:58.127 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@e33d499
+01-19 08:44:58.128 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@e2e535e
+01-19 08:44:58.128 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@fd4533f
+01-19 08:44:58.128 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@7ed40c
+01-19 08:44:58.128 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@7e42155
+01-19 08:44:58.129 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@b08476a
+01-19 08:44:58.129 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@e44e45b
+01-19 08:44:58.129 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@a4b24f8
+01-19 08:44:58.129 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@7127dd1
+01-19 08:44:58.130 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@5db7036
+01-19 08:44:58.131 I/System.out(21992): BeaconFragment onDestroyView
+01-19 08:44:58.134 D/BluetoothGatt(21992): cancelOpen() - device: 60:77:71:FC:6B:9D
+01-19 08:44:58.144 D/BluetoothGatt(21992): close()
+01-19 08:44:58.144 D/BluetoothGatt(21992): unregisterApp() - mClientIf=8
+01-19 08:44:58.151 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:44:58.152 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@e861609
+01-19 08:44:58.152 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:44:58.152 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@dc4500e
+01-19 08:44:58.156 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:44:58.170 I/Quality (21992): Skipped: true 2 cost 43.500397 refreshRate 16709416 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:44:58.912 D/Activity(21992): dispatchKeyEvent to com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.scan.ScanDeviceListActivity@905a89b will call onBackPressed
+01-19 08:44:58.913 D/Activity(21992): com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.scan.ScanDeviceListActivity@905a89bonBackPressed!
+01-19 08:44:58.951 D/VRI[ScanDeviceListActivity](21992): onFocusEvent false
+01-19 08:44:58.977 I/GED     (21992): ged_boost_gpu_freq, level 100, eOrigin 2, final_idx 2, oppidx_max 2, oppidx_min 0
+01-19 08:44:59.432 D/VRI[ScanDeviceListActivity](21992): dispatchAppVisibility visible:false
+01-19 08:44:59.472 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#75](f:0,a:1) destructor()
+01-19 08:44:59.472 D/BufferQueueConsumer(21992): [VRI[ScanDeviceListActivity]#75(BLAST Consumer)75](id:55e80000004b,api:0,p:-1,c:21992) disconnect
+01-19 08:44:59.475 D/VRI[ScanDeviceListActivity](21992): setWindowStopped stopped:true
+01-19 08:44:59.479 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:44:59.479 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@143ac7d
+01-19 08:44:59.479 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:44:59.479 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@e0cb772
+01-19 08:44:59.483 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:44:59.636 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:44:59.636 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@f639379
+01-19 08:44:59.636 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:44:59.637 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@cead8be
+01-19 08:44:59.639 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:44:59.654 D/BLASTBufferQueue(21992): [VRI[Toast]#74](f:0,a:1) destructor()
+01-19 08:44:59.655 D/BufferQueueConsumer(21992): [VRI[Toast]#74(BLAST Consumer)74](id:55e80000004a,api:0,p:-1,c:21992) disconnect
+01-19 08:45:02.088 D/ActivityThread(21992): do gfx trim 40 success
+01-19 08:45:02.089 I/GED     (21992): ged_boost_gpu_freq, level 100, eOrigin 2, final_idx 2, oppidx_max 2, oppidx_min 0
+01-19 08:45:09.710 D/libMEOW (21992): meow new tls: 0xb400006fc44c5e00
+01-19 08:45:09.710 D/libMEOW (21992): applied 1 plugins for [com.THLight.BLE.USBeacon.Writer.Simple.dev]:
+01-19 08:45:09.710 D/libMEOW (21992):   plugin 1: [libMEOW_gift.so]: 0xb400007035992880
+01-19 08:45:09.711 D/libMEOW (21992): rebuild call chain: 0xb400006fda504500
+01-19 08:45:09.712 D/libMEOW (21992): meow delete tls: 0xb400006fc44c5e00
+01-19 08:45:09.845 D/libMEOW (21992): meow new tls: 0xb400006fcd19ac40
+01-19 08:45:09.846 D/libMEOW (21992): applied 1 plugins for [com.THLight.BLE.USBeacon.Writer.Simple.dev]:
+01-19 08:45:09.846 D/libMEOW (21992):   plugin 1: [libMEOW_gift.so]: 0xb400007035992880
+01-19 08:45:09.846 D/libMEOW (21992): rebuild call chain: 0xb400006fccc81080
+01-19 08:45:09.847 D/libMEOW (21992): meow delete tls: 0xb400006fcd19ac40
+01-19 08:45:09.872 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:09.872 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:09.872 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:09.884 I/System.out(21992): checkBtScanRequest step 3  
+01-19 08:45:09.917 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:09.918 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:09.918 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:09.924 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:09.925 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:09.925 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:09.941 D/WindowManager(21992): Add to mViews: DecorView@463c0df[ScanDeviceListActivity],pkg= com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:45:09.960 D/ViewRootImplExtImpl(21992): onDisplayChanged -1 for VRI android.view.ViewRootImpl@4ed8bfb
+01-19 08:45:09.964 D/InputEventReceiver(21992): Input log is disabled
+01-19 08:45:09.977 D/WindowManager(21992): Add to mViews: DecorView@47290ad[ScanDeviceListActivity],pkg= com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:45:09.988 D/ViewRootImplExtImpl(21992): onDisplayChanged -1 for VRI android.view.ViewRootImpl@1d48aa9
+01-19 08:45:09.990 D/InputEventReceiver(21992): Input log is disabled
+01-19 08:45:09.993 I/Quality (21992): Skipped: false 1 cost 21.081154 refreshRate 16863937 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:45:10.011 D/BufferQueueConsumer(21992): [](id:55e80000004c,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:45:10.011 E/IPCThreadState(21992): attemptIncStrongHandle(143): Not supported
+01-19 08:45:10.012 E/IPCThreadState(21992): attemptIncStrongHandle(146): Not supported
+01-19 08:45:10.012 E/IPCThreadState(21992): attemptIncStrongHandle(128): Not supported
+01-19 08:45:10.013 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.73646303
+01-19 08:45:10.018 D/VRI[ScanDeviceListActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:45:10.032 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#76](f:0,a:1) acquireNextBufferLocked size=812x360 mFrameNumber=1 applyTransaction=true mTimestamp=192260592541689(auto) mPendingTransactions.size=0 graphicBufferId=94454920774211 transform=0
+01-19 08:45:10.033 D/VRI[ScanDeviceListActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:45:10.034 W/Parcel  (21992): Expecting binder but got null!
+01-19 08:45:10.034 D/VRI[ScanDeviceListActivity](21992): draw finished.
+01-19 08:45:10.050 D/BufferQueueConsumer(21992): [](id:55e80000004d,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:45:10.052 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.74617005
+01-19 08:45:10.056 D/VRI[ScanDeviceListActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:45:10.071 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#77](f:0,a:1) acquireNextBufferLocked size=720x1600 mFrameNumber=1 applyTransaction=true mTimestamp=192260632509613(auto) mPendingTransactions.size=0 graphicBufferId=94454920774216 transform=0
+01-19 08:45:10.072 D/VRI[ScanDeviceListActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:45:10.073 W/Parcel  (21992): Expecting binder but got null!
+01-19 08:45:10.073 D/VRI[ScanDeviceListActivity](21992): draw finished.
+01-19 08:45:10.077 D/BluetoothAdapter(21992): isLeEnabled(): ON
+01-19 08:45:10.085 D/BluetoothLeScanner(21992): onScannerRegistered() - status=0 scannerId=8 mScannerId=0
+01-19 08:45:10.095 I/Quality (21992): Skipped: false 4 cost 73.30113 refreshRate 16812251 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:45:10.097 D/VRI[ScanDeviceListActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:45:10.105 D/VRI[ScanDeviceListActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=2 didProduceBuffer=true syncBuffer=false
+01-19 08:45:10.106 D/VRI[ScanDeviceListActivity](21992): draw finished.
+01-19 08:45:10.146 D/VRI[ScanDeviceListActivity](21992): onFocusEvent true
+01-19 08:45:14.966 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:45:14.967 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@fdd90da
+01-19 08:45:14.967 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:45:14.968 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@615490b
+01-19 08:45:14.971 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:45:14.980 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#76](f:0,a:1) destructor()
+01-19 08:45:14.980 D/BufferQueueConsumer(21992): [VRI[ScanDeviceListActivity]#76(BLAST Consumer)76](id:55e80000004c,api:0,p:-1,c:21992) disconnect
+01-19 08:45:15.004 D/BluetoothAdapter(21992): isLeEnabled(): ON
+01-19 08:45:15.012 I/Quality (21992): Skipped: false 2 cost 46.12055 refreshRate 16700875 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:45:15.016 I/System.out(21992): getItemTypeIndexByPosition -----> foreach 0 , position : 0 , preItemCount : 0 , count : 2 , itemType : 2
+01-19 08:45:15.021 I/System.out(21992): getItemTypeIndexByPosition -----> foreach 1 , position : 1 , preItemCount : 0 , count : 2 , itemType : 2
+01-19 08:45:15.040 D/VRI[ScanDeviceListActivity](21992): onFocusEvent true
+01-19 08:45:17.074 D/Activity(21992): dispatchKeyEvent to com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.scan.ScanDeviceListActivity@be2e391 will call onBackPressed
+01-19 08:45:17.074 D/Activity(21992): com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.scan.ScanDeviceListActivity@be2e391onBackPressed!
+01-19 08:45:17.112 D/VRI[ScanDeviceListActivity](21992): onFocusEvent false
+01-19 08:45:17.171 I/GED     (21992): ged_boost_gpu_freq, level 100, eOrigin 2, final_idx 2, oppidx_max 2, oppidx_min 0
+01-19 08:45:17.295 D/AutofillManager(21992): Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+01-19 08:45:17.625 D/VRI[ScanDeviceListActivity](21992): dispatchAppVisibility visible:false
+01-19 08:45:17.659 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#77](f:0,a:1) destructor()
+01-19 08:45:17.659 D/BufferQueueConsumer(21992): [VRI[ScanDeviceListActivity]#77(BLAST Consumer)77](id:55e80000004d,api:0,p:-1,c:21992) disconnect
+01-19 08:45:17.662 D/VRI[ScanDeviceListActivity](21992): setWindowStopped stopped:true
+01-19 08:45:17.665 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:45:17.666 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@87c7ae2
+01-19 08:45:17.666 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:45:17.666 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@73d5e73
+01-19 08:45:17.667 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:45:20.245 D/ActivityThread(21992): do gfx trim 40 success
+01-19 08:45:20.245 I/GED     (21992): ged_boost_gpu_freq, level 100, eOrigin 2, final_idx 2, oppidx_max 2, oppidx_min 0
+01-19 08:45:46.531 D/libMEOW (21992): meow new tls: 0xb400006fc44c5d40
+01-19 08:45:46.532 D/libMEOW (21992): applied 1 plugins for [com.THLight.BLE.USBeacon.Writer.Simple.dev]:
+01-19 08:45:46.532 D/libMEOW (21992):   plugin 1: [libMEOW_gift.so]: 0xb400007035992880
+01-19 08:45:46.532 D/libMEOW (21992): rebuild call chain: 0xb400006fda504100
+01-19 08:45:46.533 D/libMEOW (21992): meow delete tls: 0xb400006fc44c5d40
+01-19 08:45:46.656 D/libMEOW (21992): meow new tls: 0xb400006fcd19a440
+01-19 08:45:46.656 D/libMEOW (21992): applied 1 plugins for [com.THLight.BLE.USBeacon.Writer.Simple.dev]:
+01-19 08:45:46.656 D/libMEOW (21992):   plugin 1: [libMEOW_gift.so]: 0xb400007035992880
+01-19 08:45:46.657 D/libMEOW (21992): rebuild call chain: 0xb400007047275240
+01-19 08:45:46.657 D/libMEOW (21992): meow delete tls: 0xb400006fcd19a440
+01-19 08:45:46.682 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:46.682 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:46.682 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:46.692 I/System.out(21992): checkBtScanRequest step 3  
+01-19 08:45:46.720 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:46.720 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:46.720 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:46.726 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:46.726 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:46.726 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:45:46.740 D/WindowManager(21992): Add to mViews: DecorView@96dbfc1[ScanDeviceListActivity],pkg= com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:45:46.756 D/ViewRootImplExtImpl(21992): onDisplayChanged -1 for VRI android.view.ViewRootImpl@55596fd
+01-19 08:45:46.759 D/InputEventReceiver(21992): Input log is disabled
+01-19 08:45:46.772 D/WindowManager(21992): Add to mViews: DecorView@11af39f[ScanDeviceListActivity],pkg= com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:45:46.781 D/ViewRootImplExtImpl(21992): onDisplayChanged -1 for VRI android.view.ViewRootImpl@fc52abb
+01-19 08:45:46.783 D/InputEventReceiver(21992): Input log is disabled
+01-19 08:45:46.787 I/Quality (21992): Skipped: false 1 cost 20.642769 refreshRate 16698052 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:45:46.803 D/BufferQueueConsumer(21992): [](id:55e80000004e,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:45:46.803 E/IPCThreadState(21992): attemptIncStrongHandle(97): Not supported
+01-19 08:45:46.803 E/IPCThreadState(21992): attemptIncStrongHandle(96): Not supported
+01-19 08:45:46.805 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.158187457
+01-19 08:45:46.808 D/VRI[ScanDeviceListActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:45:46.822 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#78](f:0,a:1) acquireNextBufferLocked size=812x360 mFrameNumber=1 applyTransaction=true mTimestamp=192297383022846(auto) mPendingTransactions.size=0 graphicBufferId=94454920774227 transform=0
+01-19 08:45:46.822 D/VRI[ScanDeviceListActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:45:46.823 W/Parcel  (21992): Expecting binder but got null!
+01-19 08:45:46.823 D/VRI[ScanDeviceListActivity](21992): draw finished.
+01-19 08:45:46.840 D/BufferQueueConsumer(21992): [](id:55e80000004f,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:45:46.842 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.18543519
+01-19 08:45:46.846 D/VRI[ScanDeviceListActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:45:46.861 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#79](f:0,a:1) acquireNextBufferLocked size=720x1600 mFrameNumber=1 applyTransaction=true mTimestamp=192297422413692(auto) mPendingTransactions.size=0 graphicBufferId=94454920774231 transform=0
+01-19 08:45:46.862 D/VRI[ScanDeviceListActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:45:46.863 W/Parcel  (21992): Expecting binder but got null!
+01-19 08:45:46.864 D/VRI[ScanDeviceListActivity](21992): draw finished.
+01-19 08:45:46.867 D/BluetoothAdapter(21992): isLeEnabled(): ON
+01-19 08:45:46.873 D/BluetoothLeScanner(21992): onScannerRegistered() - status=0 scannerId=8 mScannerId=0
+01-19 08:45:46.887 I/Quality (21992): Skipped: false 4 cost 78.365234 refreshRate 16704390 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:45:46.888 D/VRI[ScanDeviceListActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:45:46.897 D/VRI[ScanDeviceListActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=2 didProduceBuffer=true syncBuffer=false
+01-19 08:45:46.898 D/VRI[ScanDeviceListActivity](21992): draw finished.
+01-19 08:45:46.949 D/VRI[ScanDeviceListActivity](21992): onFocusEvent true
+01-19 08:45:51.761 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:45:51.762 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@6a578a9
+01-19 08:45:51.762 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:45:51.762 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@aee0e2e
+01-19 08:45:51.764 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:45:51.781 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#78](f:0,a:1) destructor()
+01-19 08:45:51.781 D/BufferQueueConsumer(21992): [VRI[ScanDeviceListActivity]#78(BLAST Consumer)78](id:55e80000004e,api:0,p:-1,c:21992) disconnect
+01-19 08:45:51.804 D/BluetoothAdapter(21992): isLeEnabled(): ON
+01-19 08:45:51.813 I/Quality (21992): Skipped: false 2 cost 42.91611 refreshRate 16710593 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:45:51.819 I/System.out(21992): getItemTypeIndexByPosition -----> foreach 0 , position : 0 , preItemCount : 0 , count : 2 , itemType : 2
+01-19 08:45:51.827 I/System.out(21992): getItemTypeIndexByPosition -----> foreach 1 , position : 1 , preItemCount : 0 , count : 2 , itemType : 2
+01-19 08:45:51.837 D/VRI[ScanDeviceListActivity](21992): onFocusEvent true
+01-19 08:46:00.759 D/Activity(21992): dispatchKeyEvent to com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.scan.ScanDeviceListActivity@79c7d24 will call onBackPressed
+01-19 08:46:00.759 D/Activity(21992): com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.scan.ScanDeviceListActivity@79c7d24onBackPressed!
+01-19 08:46:00.816 D/VRI[ScanDeviceListActivity](21992): onFocusEvent false
+01-19 08:46:00.838 I/GED     (21992): ged_boost_gpu_freq, level 100, eOrigin 2, final_idx 2, oppidx_max 2, oppidx_min 0
+01-19 08:46:00.997 D/AutofillManager(21992): Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+01-19 08:46:01.297 D/VRI[ScanDeviceListActivity](21992): dispatchAppVisibility visible:false
+01-19 08:46:01.337 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#79](f:0,a:1) destructor()
+01-19 08:46:01.337 D/BufferQueueConsumer(21992): [VRI[ScanDeviceListActivity]#79(BLAST Consumer)79](id:55e80000004f,api:0,p:-1,c:21992) disconnect
+01-19 08:46:01.339 D/VRI[ScanDeviceListActivity](21992): setWindowStopped stopped:true
+01-19 08:46:01.345 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:46:01.346 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@766f78d
+01-19 08:46:01.346 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:46:01.346 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@a528d42
+01-19 08:46:01.348 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:46:03.944 D/ActivityThread(21992): do gfx trim 40 success
+01-19 08:46:03.944 I/GED     (21992): ged_boost_gpu_freq, level 100, eOrigin 2, final_idx 2, oppidx_max 2, oppidx_min 0

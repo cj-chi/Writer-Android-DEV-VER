@@ -1,7 +1,9 @@
 package com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.scan;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Process;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toolbar;
@@ -64,6 +66,7 @@ public class ScanDeviceListActivity extends BaseActivity implements CustomRecycl
     private List<BluetoothDeviceItemEntity> bluetoothDeviceItemEntityList = new ArrayList<>();
     private int selectedPosition;
     private List<Map<String, String>> mapList;
+    private AlertDialog pidDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -239,18 +242,36 @@ public class ScanDeviceListActivity extends BaseActivity implements CustomRecycl
 
     @Override
     public void onConnectDeviceStateSuccess() { // 連線成功
+        showPidDialog("連線成功");
         BluetoothConnectDeviceManager.getInstance().discoverService();
     }
 
     @Override
     public void onDisconnectDeviceState() { // 中斷連線
+        showPidDialog("連線中斷");
         finishActivity(REQUEST_SETTING_DEVICE);
         toastMessageView(this, getString(R.string.disconnected) + bluetoothDeviceItemEntityList.get(selectedPosition).getMacAddress());
     }
 
     @Override
     public void onConnectDeviceStateError() { // 連線失敗
+        showPidDialog("連線失敗");
         toastMessageView(this, getString(R.string.connect_failed) + bluetoothDeviceItemEntityList.get(selectedPosition).getMacAddress());
+    }
+
+    private void showPidDialog(String status) {
+        int pid = Process.myPid();
+        runOnUiThread(() -> {
+            if (pidDialog != null && pidDialog.isShowing()) {
+                pidDialog.dismiss();
+            }
+            pidDialog = new AlertDialog.Builder(this)
+                    .setTitle(status)
+                    .setMessage("PID: " + pid)
+                    .setPositiveButton("OK", null)
+                    .create();
+            pidDialog.show();
+        });
     }
 
     @Override

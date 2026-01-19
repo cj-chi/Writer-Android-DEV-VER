@@ -1,0 +1,495 @@
+--------- beginning of system
+01-19 08:49:11.275 I/Quality (21992): Skipped: false 1 cost 18.383768 refreshRate 16906372 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:11.295 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.159956488
+01-19 08:49:11.336 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.28252574
+01-19 08:49:11.374 I/Quality (21992): Skipped: false 4 cost 78.81854 refreshRate 16863550 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+--------- beginning of main
+01-19 08:49:16.251 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:49:16.252 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@7ece778
+01-19 08:49:16.252 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:49:16.252 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@d354e51
+01-19 08:49:16.257 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:49:16.285 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#80](f:0,a:1) destructor()
+01-19 08:49:16.285 D/BufferQueueConsumer(21992): [VRI[ScanDeviceListActivity]#80(BLAST Consumer)80](id:55e800000050,api:0,p:-1,c:21992) disconnect
+01-19 08:49:16.292 D/BluetoothAdapter(21992): isLeEnabled(): ON
+01-19 08:49:16.307 I/Quality (21992): Skipped: false 3 cost 51.408794 refreshRate 16703380 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:16.313 I/System.out(21992): getItemTypeIndexByPosition -----> foreach 0 , position : 0 , preItemCount : 0 , count : 2 , itemType : 2
+01-19 08:49:16.321 I/System.out(21992): getItemTypeIndexByPosition -----> foreach 1 , position : 1 , preItemCount : 0 , count : 2 , itemType : 2
+01-19 08:49:16.331 D/VRI[ScanDeviceListActivity](21992): onFocusEvent true
+01-19 08:49:19.390 D/AutofillManager(21992): Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+01-19 08:49:19.391 V/AutofillManager(21992): requestHideFillUi(null): anchor = null
+01-19 08:49:19.398 D/OplusSystemUINavigationGestureExtImpl(21992): regionString = null
+01-19 08:49:19.493 D/WindowManager(21992): Add to mViews: DecorView@988be08[ScanDeviceListActivity],pkg= com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:19.518 D/ViewRootImplExtImpl(21992): onDisplayChanged -1 for VRI android.view.ViewRootImpl@b017d54
+01-19 08:49:19.523 D/InputEventReceiver(21992): Input log is disabled
+01-19 08:49:19.524 I/System.out(21992): onScanDeviceItemClick :  : null
+01-19 08:49:19.526 D/BluetoothGatt(21992): connect() - device: 60:77:71:FC:6B:9D, auto: false
+01-19 08:49:19.526 D/BluetoothGatt(21992): registerApp()
+01-19 08:49:19.526 D/BluetoothGatt(21992): registerApp() - UUID=f1a65927-5cb5-44a5-bb5a-1416a80e012b
+01-19 08:49:19.532 D/BluetoothGatt(21992): onClientRegistered() - status=0 clientIf=8
+01-19 08:49:19.535 I/Quality (21992): Skipped: false 2 cost 40.82674 refreshRate 16706613 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:19.576 D/BufferQueueConsumer(21992): [](id:55e800000052,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:49:19.576 E/IPCThreadState(21992): attemptIncStrongHandle(134): Not supported
+01-19 08:49:19.579 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.159956488
+01-19 08:49:19.585 D/VRI[ScanDeviceListActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:49:19.605 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#82](f:0,a:1) acquireNextBufferLocked size=812x360 mFrameNumber=1 applyTransaction=true mTimestamp=192510165410935(auto) mPendingTransactions.size=0 graphicBufferId=94454920774260 transform=0
+01-19 08:49:19.605 D/VRI[ScanDeviceListActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:49:19.606 W/Parcel  (21992): Expecting binder but got null!
+01-19 08:49:19.607 D/VRI[ScanDeviceListActivity](21992): draw finished.
+01-19 08:49:19.608 D/VRI[ScanDeviceListActivity](21992): onFocusEvent false
+01-19 08:49:19.614 I/Quality (21992): Skipped: false 4 cost 68.96234 refreshRate 16959291 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:19.645 D/VRI[ScanDeviceListActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:49:19.662 D/VRI[ScanDeviceListActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=4 didProduceBuffer=true syncBuffer=false
+01-19 08:49:19.662 D/VRI[ScanDeviceListActivity](21992): draw finished.
+01-19 08:49:19.674 D/VRI[ScanDeviceListActivity](21992): onFocusEvent true
+01-19 08:49:19.745 D/BluetoothGatt(21992): onClientConnectionState() - status=0 clientIf=8 device=60:77:71:FC:6B:9D
+01-19 08:49:19.746 I/System.out(21992): ConnectBLE onConnectionStateChange BluetoothGatt : 0 , 2
+01-19 08:49:22.247 D/BluetoothGatt(21992): discoverServices() - device: 60:77:71:FC:6B:9D
+01-19 08:49:22.256 D/BluetoothGatt(21992): onConnectionUpdated() - Device=60:77:71:FC:6B:9D interval=6 latency=0 timeout=500 status=0
+01-19 08:49:22.257 D/BluetoothGatt(21992): onConnectionUpdated() - Device=60:77:71:FC:6B:9D interval=39 latency=0 timeout=500 status=0
+01-19 08:49:22.258 D/BluetoothGatt(21992): onConnectionUpdated() - Device=60:77:71:FC:6B:9D interval=12 latency=0 timeout=100 status=0
+01-19 08:49:22.267 D/BluetoothGatt(21992): onSearchComplete() = Device=60:77:71:FC:6B:9D Status=0
+01-19 08:49:22.268 I/System.out(21992): ConnectBLE onServicesDiscovered
+01-19 08:49:22.268 I/System.out(21992): ConnectBLE onServicesDiscovered GATT_SUCCESS
+01-19 08:49:22.268 I/System.out(21992): ConnectBLE generateDeviceDataService  
+01-19 08:49:22.268 I/System.out(21992): ConnectBLE generateDeviceDataService versionCharacteristic 00002a26-0000-1000-8000-00805f9b34fb
+01-19 08:49:22.268 I/System.out(21992): ConnectBLE generateCommandCharacteristic : 0000f001-0000-1000-8000-00805f9b34fb
+01-19 08:49:22.268 I/System.out(21992): ConnectBLE generateAckCharacteristic : 0000f002-0000-1000-8000-00805f9b34fb
+01-19 08:49:22.269 I/System.out(21992): ConnectBLE generateUuidService step 1 
+01-19 08:49:22.270 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:49:22.271 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@43181d8
+01-19 08:49:22.271 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:49:22.271 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@3b44931
+01-19 08:49:22.276 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:49:22.284 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#82](f:0,a:1) destructor()
+01-19 08:49:22.284 D/BufferQueueConsumer(21992): [VRI[ScanDeviceListActivity]#82(BLAST Consumer)82](id:55e800000052,api:0,p:-1,c:21992) disconnect
+01-19 08:49:22.352 I/Quality (21992): Skipped: false 3 cost 65.67885 refreshRate 16701421 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:22.378 D/VRI[ScanDeviceListActivity](21992): onFocusEvent true
+01-19 08:49:22.380 D/libMEOW (21992): meow new tls: 0xb400006fc44c5880
+01-19 08:49:22.381 D/libMEOW (21992): applied 1 plugins for [com.THLight.BLE.USBeacon.Writer.Simple.dev]:
+01-19 08:49:22.381 D/libMEOW (21992):   plugin 1: [libMEOW_gift.so]: 0xb400007035992880
+01-19 08:49:22.381 D/libMEOW (21992): rebuild call chain: 0xb400006fda504740
+01-19 08:49:22.381 D/libMEOW (21992): meow delete tls: 0xb400006fc44c5880
+01-19 08:49:22.424 E/iter.Simple.dev(21992): hiddenapi: Accessing hidden field Landroid/bluetooth/BluetoothGatt;->mDeviceBusy:Ljava/lang/Boolean; (runtime_flags=0, domain=platform, api=max-target-r) from Lcom/THLight/BLE/USBeacon/Writer/Simple/manager/BluetoothConnectDeviceManager; (domain=app) using reflection: denied
+01-19 08:49:22.425 W/System.err(21992): java.lang.NoSuchFieldException: No field mDeviceBusy in class Landroid/bluetooth/BluetoothGatt; (declaration of 'android.bluetooth.BluetoothGatt' appears in /system/framework/framework.jar)
+01-19 08:49:22.425 W/System.err(21992): 	at java.lang.Class.getDeclaredField(Native Method)
+01-19 08:49:22.425 W/System.err(21992): 	at com.THLight.BLE.USBeacon.Writer.Simple.manager.BluetoothConnectDeviceManager.readField(BluetoothConnectDeviceManager.java:232)
+01-19 08:49:22.425 W/System.err(21992): 	at com.THLight.BLE.USBeacon.Writer.Simple.manager.BluetoothConnectDeviceManager.isDeviceBusy(BluetoothConnectDeviceManager.java:225)
+01-19 08:49:22.425 W/System.err(21992): 	at com.THLight.BLE.USBeacon.Writer.Simple.manager.BluetoothConnectDeviceManager.readVersionCharacteristic(BluetoothConnectDeviceManager.java:239)
+01-19 08:49:22.425 W/System.err(21992): 	at com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.connect.EditDeviceActivity.onCreate(EditDeviceActivity.java:92)
+01-19 08:49:22.425 W/System.err(21992): 	at android.app.Activity.performCreate(Activity.java:8397)
+01-19 08:49:22.425 W/System.err(21992): 	at android.app.Activity.performCreate(Activity.java:8370)
+01-19 08:49:22.425 W/System.err(21992): 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1403)
+01-19 08:49:22.425 W/System.err(21992): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3837)
+01-19 08:49:22.425 W/System.err(21992): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4006)
+01-19 08:49:22.425 W/System.err(21992): 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:111)
+01-19 08:49:22.426 W/System.err(21992): 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135)
+01-19 08:49:22.426 W/System.err(21992): 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95)
+01-19 08:49:22.426 W/System.err(21992): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2462)
+01-19 08:49:22.426 W/System.err(21992): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+01-19 08:49:22.426 W/System.err(21992): 	at android.os.Looper.loopOnce(Looper.java:240)
+01-19 08:49:22.426 W/System.err(21992): 	at android.os.Looper.loop(Looper.java:351)
+01-19 08:49:22.426 W/System.err(21992): 	at android.app.ActivityThread.main(ActivityThread.java:8377)
+01-19 08:49:22.426 W/System.err(21992): 	at java.lang.reflect.Method.invoke(Native Method)
+01-19 08:49:22.426 W/System.err(21992): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+01-19 08:49:22.426 W/System.err(21992): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1013)
+01-19 08:49:22.429 I/System.out(21992): ConnectBLE readVersionCharacteristic : 00002a26-0000-1000-8000-00805f9b34fb true
+01-19 08:49:22.440 D/WindowManager(21992): Add to mViews: DecorView@14fa9fe[EditDeviceActivity],pkg= com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:22.453 D/ViewRootImplExtImpl(21992): onDisplayChanged -1 for VRI android.view.ViewRootImpl@1f8680a
+01-19 08:49:22.454 I/System.out(21992): ConnectBLE onCharacteristicRead 00002a26-0000-1000-8000-00805f9b34fb status: 0
+01-19 08:49:22.455 I/System.out(21992): ConnectManager onVersionCharacteristicRead originValue: 2.7
+01-19 08:49:22.455 I/System.out(21992): ConnectManager onVersionCharacteristicRead characteristicValue 2.7
+01-19 08:49:22.455 I/System.out(21992): getVersionCharacteristicString - > 27
+01-19 08:49:22.455 I/System.out(21992): ConnectBLE onVersionCharacteristicRead versionCharacteristicInt : 27
+01-19 08:49:22.456 D/InputEventReceiver(21992): Input log is disabled
+01-19 08:49:22.456 I/System.out(21992): ConnectBLE generateEncryptData : F72E62305F72FA2E1C096B74513FA089A024
+01-19 08:49:22.456 I/System.out(21992): ConnectBLE generateEncryptData : F9036F70706F6F70706F6F70706F6F70706F
+01-19 08:49:22.457 D/VRI[ScanDeviceListActivity](21992): onFocusEvent false
+01-19 08:49:22.457 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 2UnKnown
+01-19 08:49:22.457 I/System.out(21992): ConnectBLE commandWriteData -- >  9074BEF123FBE606AFBA539DF8C718543ED7
+01-19 08:49:22.485 I/System.out(21992): ConnectBLE onCharacteristicWrite  : 2e , 902EE4AB79A1BC5CF5E009C7A29D420E648D
+01-19 08:49:22.488 D/AutofillManager(21992): Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+01-19 08:49:22.488 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.488 V/AutofillManager(21992): notifyValueChanged(1073741824): ignoring on state UNKNOWN
+01-19 08:49:22.488 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.488 V/AutofillManager(21992): notifyValueChanged(1073741824): ignoring on state UNKNOWN
+01-19 08:49:22.492 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.492 V/AutofillManager(21992): notifyValueChanged(1073741825): ignoring on state UNKNOWN
+01-19 08:49:22.492 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.493 V/AutofillManager(21992): notifyValueChanged(1073741825): ignoring on state UNKNOWN
+01-19 08:49:22.514 I/System.out(21992): ConnectBLE onCharacteristicRead 0000f002-0000-1000-8000-00805f9b34fb status: 0
+01-19 08:49:22.514 I/System.out(21992): ConnectBLE onAckCharacteristicRead Ack : 88 , 33051F0695053FDEA773021A139DA009
+01-19 08:49:22.514 I/System.out(21992): EditDeviceActivity OnMessageAckResponse flag : 2e , responseCode : ffffff88 , data : 33051F0695053FDEA773021A139DA009
+01-19 08:49:22.514 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 1UnKnown
+01-19 08:49:22.515 I/System.out(21992): ConnectBLE commandWriteData -- >  FBC0DB1C1CDBDB1C1CDBDB1C1CDBDB1C1CDB
+01-19 08:49:22.525 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.525 V/AutofillManager(21992): notifyValueChanged(1073741826): ignoring on state UNKNOWN
+01-19 08:49:22.526 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.526 V/AutofillManager(21992): notifyValueChanged(1073741826): ignoring on state UNKNOWN
+01-19 08:49:22.529 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.529 V/AutofillManager(21992): notifyValueChanged(1073741827): ignoring on state UNKNOWN
+01-19 08:49:22.530 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.530 V/AutofillManager(21992): notifyValueChanged(1073741827): ignoring on state UNKNOWN
+01-19 08:49:22.533 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.533 V/AutofillManager(21992): notifyValueChanged(1073741828): ignoring on state UNKNOWN
+01-19 08:49:22.534 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.534 V/AutofillManager(21992): notifyValueChanged(1073741828): ignoring on state UNKNOWN
+01-19 08:49:22.537 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.538 V/AutofillManager(21992): notifyValueChanged(1073741829): ignoring on state UNKNOWN
+01-19 08:49:22.538 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.538 V/AutofillManager(21992): notifyValueChanged(1073741829): ignoring on state UNKNOWN
+01-19 08:49:22.544 I/System.out(21992): ConnectBLE onCharacteristicWrite  : 3 , FB036F70706F6F70706F6F70706F6F70706F
+01-19 08:49:22.567 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.567 V/AutofillManager(21992): notifyValueChanged(1073741831): ignoring on state UNKNOWN
+01-19 08:49:22.567 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.567 V/AutofillManager(21992): notifyValueChanged(1073741831): ignoring on state UNKNOWN
+01-19 08:49:22.571 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.571 V/AutofillManager(21992): notifyValueChanged(1073741832): ignoring on state UNKNOWN
+01-19 08:49:22.571 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.571 V/AutofillManager(21992): notifyValueChanged(1073741832): ignoring on state UNKNOWN
+01-19 08:49:22.573 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.574 V/AutofillManager(21992): notifyValueChanged(1073741833): ignoring on state UNKNOWN
+01-19 08:49:22.575 I/System.out(21992): ConnectBLE onCharacteristicRead 0000f002-0000-1000-8000-00805f9b34fb status: 0
+01-19 08:49:22.575 I/System.out(21992): ConnectBLE onAckCharacteristicRead Ack : 80 , 4986EAED4F4402355F336A1257D89831
+01-19 08:49:22.575 I/System.out(21992): EditDeviceActivity OnMessageAckResponse flag : 3 , responseCode : ffffff80 , data : 4986EAED4F4402355F336A1257D89831
+01-19 08:49:22.575 I/System.out(21992): ConnectBLE generateEncryptData : 7714E0854CDEB31AD722D151A8C7957AB6B9
+01-19 08:49:22.575 I/System.out(21992): ConnectBLE generateEncryptData : 0006BC0C29B83226D03FBB58393E7897AF11
+01-19 08:49:22.575 I/System.out(21992): ConnectBLE generateEncryptData : 0C161424310456D8D616319E1D107DF06D2C
+01-19 08:49:22.575 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 3Read
+01-19 08:49:22.575 I/System.out(21992): ConnectBLE commandWriteData -- >  B5B112D0EC2F27C95FE67B271A4AC6A22A6C
+01-19 08:49:22.578 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 3Read
+01-19 08:49:22.578 I/System.out(21992): ConnectBLE commandWriteData -- >  B5B112D0EC2F27C95FE67B271A4AC6A22A6C
+01-19 08:49:22.602 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.603 V/AutofillManager(21992): notifyValueChanged(1073741834): ignoring on state UNKNOWN
+01-19 08:49:22.603 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.603 V/AutofillManager(21992): notifyValueChanged(1073741834): ignoring on state UNKNOWN
+01-19 08:49:22.605 I/System.out(21992): ConnectBLE onCharacteristicWrite  : 14 , B514B775498A826CFA43DE82BFEF63078FC9
+01-19 08:49:22.606 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.606 V/AutofillManager(21992): notifyValueChanged(1073741835): ignoring on state UNKNOWN
+01-19 08:49:22.606 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.606 V/AutofillManager(21992): notifyValueChanged(1073741835): ignoring on state UNKNOWN
+01-19 08:49:22.609 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.609 V/AutofillManager(21992): notifyValueChanged(1073741836): ignoring on state UNKNOWN
+01-19 08:49:22.610 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.610 V/AutofillManager(21992): notifyValueChanged(1073741836): ignoring on state UNKNOWN
+01-19 08:49:22.612 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.612 V/AutofillManager(21992): notifyValueChanged(1073741837): ignoring on state UNKNOWN
+01-19 08:49:22.622 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.622 V/AutofillManager(21992): notifyValueChanged(1073741838): ignoring on state UNKNOWN
+01-19 08:49:22.623 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.623 V/AutofillManager(21992): notifyValueChanged(1073741838): ignoring on state UNKNOWN
+01-19 08:49:22.626 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.626 V/AutofillManager(21992): notifyValueChanged(1073741839): ignoring on state UNKNOWN
+01-19 08:49:22.626 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.626 V/AutofillManager(21992): notifyValueChanged(1073741839): ignoring on state UNKNOWN
+01-19 08:49:22.629 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.629 V/AutofillManager(21992): notifyValueChanged(1073741840): ignoring on state UNKNOWN
+01-19 08:49:22.630 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.630 V/AutofillManager(21992): notifyValueChanged(1073741840): ignoring on state UNKNOWN
+01-19 08:49:22.634 I/System.out(21992): ConnectBLE onCharacteristicRead 0000f002-0000-1000-8000-00805f9b34fb status: 0
+01-19 08:49:22.635 I/System.out(21992): ConnectBLE onAckCharacteristicRead Ack : 14 , 0A0000180CCC863645E54063B3F4274C
+01-19 08:49:22.635 I/System.out(21992): EditDeviceActivity OnMessageAckResponse flag : 14 , responseCode : 14 , data : 0A0000180CCC863645E54063B3F4274C
+01-19 08:49:22.635 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 2Read
+01-19 08:49:22.635 I/System.out(21992): ConnectBLE commandWriteData -- >  0B812F034A2E8C78484194056290758FBCA3
+01-19 08:49:22.639 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.639 V/AutofillManager(21992): notifyValueChanged(1073741841): ignoring on state UNKNOWN
+01-19 08:49:22.644 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.644 V/AutofillManager(21992): notifyValueChanged(1073741842): ignoring on state UNKNOWN
+01-19 08:49:22.645 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.645 V/AutofillManager(21992): notifyValueChanged(1073741842): ignoring on state UNKNOWN
+01-19 08:49:22.648 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.648 V/AutofillManager(21992): notifyValueChanged(1073741843): ignoring on state UNKNOWN
+01-19 08:49:22.649 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.649 V/AutofillManager(21992): notifyValueChanged(1073741843): ignoring on state UNKNOWN
+01-19 08:49:22.652 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.652 V/AutofillManager(21992): notifyValueChanged(1073741844): ignoring on state UNKNOWN
+01-19 08:49:22.665 I/System.out(21992): ConnectBLE onCharacteristicWrite  : 6 , 0B06BC0C29B832E1210552148942D53EF28E
+01-19 08:49:22.695 I/System.out(21992): ConnectBLE onCharacteristicRead 0000f002-0000-1000-8000-00805f9b34fb status: 0
+01-19 08:49:22.695 I/System.out(21992): ConnectBLE onAckCharacteristicRead Ack : 06 , 020701450135D5AB10E0FC75AB432943
+01-19 08:49:22.695 I/System.out(21992): EditDeviceActivity OnMessageAckResponse flag : 6 , responseCode : 6 , data : 020701450135D5AB10E0FC75AB432943
+01-19 08:49:22.695 I/System.out(21992): readDeviceInformation : 2.7 325
+01-19 08:49:22.695 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 1Read
+01-19 08:49:22.695 I/System.out(21992): ConnectBLE commandWriteData -- >  F785F67711401115D91238FDF17F28D8D0E7
+01-19 08:49:22.724 I/System.out(21992): ConnectBLE onCharacteristicWrite  : 16 , F716DBDD440144546748E0F7C7FDA063439F
+01-19 08:49:22.750 D/BufferQueueConsumer(21992): [](id:55e800000053,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:49:22.751 E/IPCThreadState(21992): attemptIncStrongHandle(144): Not supported
+01-19 08:49:22.752 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.21998078
+01-19 08:49:22.754 I/System.out(21992): ConnectBLE onCharacteristicRead 0000f002-0000-1000-8000-00805f9b34fb status: 0
+01-19 08:49:22.754 I/System.out(21992): ConnectBLE onAckCharacteristicRead Ack : 16 , 0C3A77DA0FB9DE87F5741DF737EEF545
+01-19 08:49:22.754 I/System.out(21992): EditDeviceActivity OnMessageAckResponse flag : 16 , responseCode : 16 , data : 0C3A77DA0FB9DE87F5741DF737EEF545
+01-19 08:49:22.754 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 0Read
+01-19 08:49:22.754 I/System.out(21992): onMessageAckResponseDone ->  Read
+01-19 08:49:22.829 D/VRI[EditDeviceActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:49:22.854 D/BLASTBufferQueue(21992): [VRI[EditDeviceActivity]#83](f:0,a:1) acquireNextBufferLocked size=720x1600 mFrameNumber=1 applyTransaction=true mTimestamp=192513415306551(auto) mPendingTransactions.size=0 graphicBufferId=94454920774268 transform=0
+01-19 08:49:22.855 D/VRI[EditDeviceActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:49:22.855 W/Parcel  (21992): Expecting binder but got null!
+01-19 08:49:22.856 D/VRI[EditDeviceActivity](21992): draw finished.
+01-19 08:49:22.859 I/Quality (21992): Skipped: false 23 cost 388.51413 refreshRate 16700665 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:22.888 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.891 V/AutofillManager(21992): receiver results: flags=7 enabled=true, enabledForAugmentedOnly: false
+01-19 08:49:22.891 V/AutofillManager(21992): startAutofillIfNeededLocked(): enabled=true mServiceClient=android.view.autofill.AutofillManager$AutofillManagerClient@dde2318
+01-19 08:49:22.891 V/AutofillManager(21992): startSessionLocked(): id=1073741824, bounds=null, value=null, flags=0, state=UNKNOWN, compatMode=false, augmentedOnly=false, enabledAugmentedOnly=false, enteredIds=null
+01-19 08:49:22.895 V/AutofillManager(21992): updateSessionLocked(): id=1073741824, bounds=null, value=[type=1, value=1_chars], action=4, flags=0
+01-19 08:49:22.897 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.897 V/AutofillManager(21992): updateSessionLocked(): id=1073741825, bounds=null, value=[type=1, value=3_chars], action=4, flags=0
+01-19 08:49:22.898 I/System.out(21992): bluetoothDeviceItemEntity.getBatteryPower() : 325
+01-19 08:49:22.898 I/System.out(21992): AES setting: false
+01-19 08:49:22.900 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.900 V/AutofillManager(21992): updateSessionLocked(): id=1073741826, bounds=null, value=[type=1, value=2_chars], action=4, flags=0
+01-19 08:49:22.902 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.902 V/AutofillManager(21992): updateSessionLocked(): id=1073741828, bounds=null, value=[type=1, value=1_chars], action=4, flags=0
+01-19 08:49:22.904 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.905 V/AutofillManager(21992): updateSessionLocked(): id=1073741843, bounds=null, value=[type=1, value=1_chars], action=4, flags=0
+01-19 08:49:22.907 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.907 V/AutofillManager(21992): updateSessionLocked(): id=1073741842, bounds=null, value=[type=1, value=1_chars], action=4, flags=0
+01-19 08:49:22.909 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.909 V/AutofillManager(21992): updateSessionLocked(): id=1073741831, bounds=null, value=[type=1, value=1_chars], action=4, flags=0
+01-19 08:49:22.911 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:22.911 V/AutofillManager(21992): updateSessionLocked(): id=1073741832, bounds=null, value=[type=1, value=1_chars], action=4, flags=0
+01-19 08:49:22.912 I/System.out(21992): getLowBatteryLedStatus: 0
+01-19 08:49:22.914 I/Quality (21992): Skipped: false 2 cost 43.006966 refreshRate 16705190 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:22.923 V/AutofillManager(21992): updateSessionLocked(): id=1073741830, bounds=null, value=[type=3, value=12], action=4, flags=0
+01-19 08:49:22.941 I/AssistStructure(21992): Flattened final assist data: 11968 bytes, containing 1 windows, 56 views
+01-19 08:49:22.943 I/Quality (21992): Skipped: true 1 cost 21.750772 refreshRate 16706196 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:22.995 D/VRI[EditDeviceActivity](21992): onFocusEvent true
+01-19 08:49:23.363 D/VRI[ScanDeviceListActivity](21992): dispatchAppVisibility visible:false
+01-19 08:49:23.399 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#81](f:0,a:1) destructor()
+01-19 08:49:23.399 D/BufferQueueConsumer(21992): [VRI[ScanDeviceListActivity]#81(BLAST Consumer)81](id:55e800000051,api:0,p:-1,c:21992) disconnect
+01-19 08:49:23.403 D/VRI[ScanDeviceListActivity](21992): setWindowStopped stopped:true
+01-19 08:49:24.583 V/AutofillManager(21992): requestHideFillUi(null): anchor = null
+01-19 08:49:24.586 D/OplusSystemUINavigationGestureExtImpl(21992): regionString = null
+01-19 08:49:24.730 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:24.730 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:24.730 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:24.735 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:24.735 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:24.735 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:24.745 D/WindowManager(21992): Add to mViews: DecorView@db48c8d[EditDeviceActivity],pkg= com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:24.759 D/ViewRootImplExtImpl(21992): onDisplayChanged -1 for VRI android.view.ViewRootImpl@26a6489
+01-19 08:49:24.762 D/InputEventReceiver(21992): Input log is disabled
+01-19 08:49:24.762 I/System.out(21992): ConnectBLE generateEncryptData : F1018A3428F6CD932B7514D5A4E2B39AF5D3
+01-19 08:49:24.763 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 1Write
+01-19 08:49:24.763 I/System.out(21992): ConnectBLE commandWriteData -- >  145B2F5EFE4D21BDA48B9BF2C4A44154F405
+01-19 08:49:24.767 I/Quality (21992): Skipped: false 3 cost 60.056488 refreshRate 16707503 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:24.784 D/BufferQueueConsumer(21992): [](id:55e800000054,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:49:24.784 E/IPCThreadState(21992): attemptIncStrongHandle(96): Not supported
+01-19 08:49:24.786 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.229936269
+01-19 08:49:24.789 D/VRI[EditDeviceActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:49:24.795 I/System.out(21992): ConnectBLE onCharacteristicWrite  : 1 , 14017504A4177BE7FED1C1A89EFE1B0EAE5F
+01-19 08:49:24.801 D/BLASTBufferQueue(21992): [VRI[EditDeviceActivity]#84](f:0,a:1) acquireNextBufferLocked size=812x360 mFrameNumber=1 applyTransaction=true mTimestamp=192515362420089(auto) mPendingTransactions.size=0 graphicBufferId=94454920774276 transform=0
+01-19 08:49:24.802 D/VRI[EditDeviceActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:49:24.803 W/Parcel  (21992): Expecting binder but got null!
+01-19 08:49:24.803 D/VRI[EditDeviceActivity](21992): draw finished.
+01-19 08:49:24.807 D/VRI[EditDeviceActivity](21992): onFocusEvent false
+01-19 08:49:24.813 I/Quality (21992): Skipped: false 2 cost 35.690926 refreshRate 17013690 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:24.825 I/System.out(21992): ConnectBLE onCharacteristicRead 0000f002-0000-1000-8000-00805f9b34fb status: 0
+01-19 08:49:24.826 I/System.out(21992): ConnectBLE onAckCharacteristicRead Ack : 80 , 9A129FA6EEA5DB5F2D41D2767215897E
+01-19 08:49:24.826 I/System.out(21992): EditDeviceActivity OnMessageAckResponse flag : 1 , responseCode : ffffff80 , data : 9A129FA6EEA5DB5F2D41D2767215897E
+01-19 08:49:24.830 D/VRI[EditDeviceActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:49:24.837 D/VRI[EditDeviceActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=3 didProduceBuffer=true syncBuffer=false
+01-19 08:49:24.838 D/VRI[EditDeviceActivity](21992): draw finished.
+01-19 08:49:24.844 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:49:24.844 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@22eb2fd
+01-19 08:49:24.844 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:49:24.845 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@5197bf2
+01-19 08:49:24.846 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:49:24.849 I/System.out(21992): ConnectBLE Command executeCommandTask gattWriteCommandList  : 0Write
+01-19 08:49:24.849 I/System.out(21992): onMessageAckResponseDone ->  write
+01-19 08:49:24.853 D/BLASTBufferQueue(21992): [VRI[EditDeviceActivity]#84](f:0,a:1) destructor()
+01-19 08:49:24.853 D/BufferQueueConsumer(21992): [VRI[EditDeviceActivity]#84(BLAST Consumer)84](id:55e800000054,api:0,p:-1,c:21992) disconnect
+01-19 08:49:24.874 I/Quality (21992): Skipped: false 1 cost 29.614653 refreshRate 16937473 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:24.885 D/VRI[ScanDeviceListActivity](21992): dispatchAppVisibility visible:true
+01-19 08:49:24.907 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:24.907 V/AutofillManager(21992): updateSessionLocked(): id=1073741824, bounds=null, value=[type=1, value=1_chars], action=4, flags=0
+01-19 08:49:24.909 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:24.909 V/AutofillManager(21992): updateSessionLocked(): id=1073741825, bounds=null, value=[type=1, value=3_chars], action=4, flags=0
+01-19 08:49:24.910 I/System.out(21992): bluetoothDeviceItemEntity.getBatteryPower() : 325
+01-19 08:49:24.910 I/System.out(21992): AES setting: false
+01-19 08:49:24.912 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:24.913 V/AutofillManager(21992): updateSessionLocked(): id=1073741826, bounds=null, value=[type=1, value=2_chars], action=4, flags=0
+01-19 08:49:24.914 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:24.914 V/AutofillManager(21992): updateSessionLocked(): id=1073741828, bounds=null, value=[type=1, value=1_chars], action=4, flags=0
+01-19 08:49:24.917 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:24.918 V/AutofillManager(21992): updateSessionLocked(): id=1073741843, bounds=null, value=[type=1, value=1_chars], action=4, flags=0
+01-19 08:49:24.919 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:24.920 V/AutofillManager(21992): updateSessionLocked(): id=1073741842, bounds=null, value=[type=1, value=1_chars], action=4, flags=0
+01-19 08:49:24.921 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:24.922 V/AutofillManager(21992): updateSessionLocked(): id=1073741831, bounds=null, value=[type=1, value=1_chars], action=4, flags=0
+01-19 08:49:24.923 V/TextView(21992): notifyAutoFillManagerAfterTextChanged
+01-19 08:49:24.923 V/AutofillManager(21992): updateSessionLocked(): id=1073741832, bounds=null, value=[type=1, value=1_chars], action=4, flags=0
+01-19 08:49:24.924 I/System.out(21992): getLowBatteryLedStatus: 0
+01-19 08:49:24.935 V/AutofillManager(21992): updateSessionLocked(): id=1073741830, bounds=null, value=[type=3, value=12], action=4, flags=0
+01-19 08:49:24.944 D/VRI[ScanDeviceListActivity](21992): setWindowStopped stopped:false
+01-19 08:49:24.955 D/WindowManager(21992): Add to mViews: android.widget.FrameLayout{17e5f20 V.E...... ......I. 0,0-0,0 #7f09023d app:id/toastMessage_frameLayout},pkg= com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:24.964 D/ViewRootImplExtImpl(21992): onDisplayChanged -1 for VRI android.view.ViewRootImpl@bba4d4c
+01-19 08:49:24.967 D/InputEventReceiver(21992): Input log is disabled
+01-19 08:49:24.971 I/Quality (21992): Skipped: false 1 cost 21.811617 refreshRate 16866468 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:24.987 D/BufferQueueConsumer(21992): [](id:55e800000055,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:49:24.987 E/IPCThreadState(21992): attemptIncStrongHandle(151): Not supported
+01-19 08:49:24.988 D/VRI[ScanDeviceListActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:49:25.001 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#85](f:0,a:1) acquireNextBufferLocked size=720x1600 mFrameNumber=1 applyTransaction=true mTimestamp=192515561887474(auto) mPendingTransactions.size=0 graphicBufferId=94454920774281 transform=0
+01-19 08:49:25.001 D/VRI[ScanDeviceListActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:49:25.002 D/VRI[ScanDeviceListActivity](21992): draw finished.
+01-19 08:49:25.014 D/BufferQueueConsumer(21992): [](id:55e800000056,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:49:25.024 D/VRI[Toast](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:49:25.032 D/BLASTBufferQueue(21992): [VRI[Toast]#86](f:0,a:1) acquireNextBufferLocked size=176x102 mFrameNumber=1 applyTransaction=true mTimestamp=192515593698935(auto) mPendingTransactions.size=0 graphicBufferId=94454920774288 transform=0
+01-19 08:49:25.033 D/VRI[Toast](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:49:25.033 W/Parcel  (21992): Expecting binder but got null!
+01-19 08:49:25.034 D/VRI[Toast](21992): draw finished.
+01-19 08:49:25.041 I/Quality (21992): Skipped: false 3 cost 63.382004 refreshRate 16836725 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:25.063 I/Quality (21992): Skipped: false 1 cost 18.82018 refreshRate 16788488 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:25.065 D/VRI[Toast](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:49:25.070 D/VRI[Toast](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=3 didProduceBuffer=true syncBuffer=false
+01-19 08:49:25.071 D/VRI[Toast](21992): draw finished.
+01-19 08:49:25.134 D/VRI[ScanDeviceListActivity](21992): onFocusEvent true
+01-19 08:49:25.554 D/VRI[EditDeviceActivity](21992): dispatchAppVisibility visible:false
+01-19 08:49:25.582 D/BLASTBufferQueue(21992): [VRI[EditDeviceActivity]#83](f:0,a:1) destructor()
+01-19 08:49:25.583 D/BufferQueueConsumer(21992): [VRI[EditDeviceActivity]#83(BLAST Consumer)83](id:55e800000053,api:0,p:-1,c:21992) disconnect
+01-19 08:49:25.587 V/AutofillManager(21992): visibility changed for 1073741824: true
+01-19 08:49:25.587 V/AutofillManager(21992): Ignoring visibility change on 1073741824: no tracked views
+01-19 08:49:25.587 V/AutofillManager(21992): visibility changed for 1073741825: true
+01-19 08:49:25.587 V/AutofillManager(21992): Ignoring visibility change on 1073741825: no tracked views
+01-19 08:49:25.587 V/AutofillManager(21992): visibility changed for 1073741830: true
+01-19 08:49:25.587 V/AutofillManager(21992): Ignoring visibility change on 1073741830: no tracked views
+01-19 08:49:25.587 V/AutofillManager(21992): visibility changed for 1073741826: true
+01-19 08:49:25.587 V/AutofillManager(21992): Ignoring visibility change on 1073741826: no tracked views
+01-19 08:49:25.587 V/AutofillManager(21992): visibility changed for 1073741829: true
+01-19 08:49:25.588 V/AutofillManager(21992): Ignoring visibility change on 1073741829: no tracked views
+01-19 08:49:25.588 V/AutofillManager(21992): visibility changed for 1073741831: true
+01-19 08:49:25.588 V/AutofillManager(21992): Ignoring visibility change on 1073741831: no tracked views
+01-19 08:49:25.588 V/AutofillManager(21992): visibility changed for 1073741832: true
+01-19 08:49:25.588 V/AutofillManager(21992): Ignoring visibility change on 1073741832: no tracked views
+01-19 08:49:25.588 V/AutofillManager(21992): visibility changed for 1073741833: true
+01-19 08:49:25.588 V/AutofillManager(21992): Ignoring visibility change on 1073741833: no tracked views
+01-19 08:49:25.588 V/AutofillManager(21992): visibility changed for 1073741837: true
+01-19 08:49:25.588 V/AutofillManager(21992): Ignoring visibility change on 1073741837: no tracked views
+01-19 08:49:25.589 V/AutofillManager(21992): visibility changed for 1073741838: true
+01-19 08:49:25.589 V/AutofillManager(21992): Ignoring visibility change on 1073741838: no tracked views
+01-19 08:49:25.589 V/AutofillManager(21992): visibility changed for 1073741839: true
+01-19 08:49:25.589 V/AutofillManager(21992): Ignoring visibility change on 1073741839: no tracked views
+01-19 08:49:25.589 V/AutofillManager(21992): visibility changed for 1073741840: true
+01-19 08:49:25.589 V/AutofillManager(21992): Ignoring visibility change on 1073741840: no tracked views
+01-19 08:49:25.589 V/AutofillManager(21992): visibility changed for 1073741841: true
+01-19 08:49:25.589 V/AutofillManager(21992): Ignoring visibility change on 1073741841: no tracked views
+01-19 08:49:25.589 V/AutofillManager(21992): visibility changed for 1073741842: true
+01-19 08:49:25.589 V/AutofillManager(21992): Ignoring visibility change on 1073741842: no tracked views
+01-19 08:49:25.590 V/AutofillManager(21992): visibility changed for 1073741843: true
+01-19 08:49:25.590 V/AutofillManager(21992): Ignoring visibility change on 1073741843: no tracked views
+01-19 08:49:25.590 V/AutofillManager(21992): visibility changed for 1073741844: true
+01-19 08:49:25.590 V/AutofillManager(21992): Ignoring visibility change on 1073741844: no tracked views
+01-19 08:49:25.591 D/VRI[EditDeviceActivity](21992): setWindowStopped stopped:true
+01-19 08:49:25.592 V/AutofillManager(21992): updateSessionLocked(): id=null, bounds=null, value=null, action=5, flags=0
+01-19 08:49:25.599 D/AutofillManager(21992): onActivityFinishing(): calling cancelLocked()
+01-19 08:49:25.599 V/AutofillManager(21992): cancelSessionLocked(): ACTIVE
+01-19 08:49:25.605 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@ce24bd
+01-19 08:49:25.605 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@e256ab2
+01-19 08:49:25.606 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@41cda03
+01-19 08:49:25.606 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@c07ed80
+01-19 08:49:25.610 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@3da2e75
+01-19 08:49:25.610 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@18b9e0a
+01-19 08:49:25.610 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@855867b
+01-19 08:49:25.611 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@985ec98
+01-19 08:49:25.618 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@8749929
+01-19 08:49:25.618 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@f05e4ae
+01-19 08:49:25.619 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@dc3924f
+01-19 08:49:25.619 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@af38ddc
+01-19 08:49:25.620 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@3149ee5
+01-19 08:49:25.620 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@24f9dba
+01-19 08:49:25.621 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@5d1046b
+01-19 08:49:25.621 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@f19abc8
+01-19 08:49:25.621 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@4f54461
+01-19 08:49:25.622 D/CursorFeedback(21992): editorDetachFromWindow android.widget.Editor@b49db86
+01-19 08:49:25.623 I/System.out(21992): BeaconFragment onDestroyView
+01-19 08:49:25.626 D/BluetoothGatt(21992): cancelOpen() - device: 60:77:71:FC:6B:9D
+01-19 08:49:25.633 D/BluetoothGatt(21992): close()
+01-19 08:49:25.633 D/BluetoothGatt(21992): unregisterApp() - mClientIf=8
+01-19 08:49:25.639 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:49:25.639 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@e091e99
+01-19 08:49:25.639 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:49:25.640 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@48ad55e
+01-19 08:49:25.643 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:49:25.656 I/Quality (21992): Skipped: true 2 cost 44.541485 refreshRate 16705352 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:26.817 D/Activity(21992): dispatchKeyEvent to com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.scan.ScanDeviceListActivity@566a697 will call onBackPressed
+01-19 08:49:26.818 D/Activity(21992): com.THLight.BLE.USBeacon.Writer.Simple.ui.activity.scan.ScanDeviceListActivity@566a697onBackPressed!
+01-19 08:49:26.854 D/VRI[ScanDeviceListActivity](21992): onFocusEvent false
+01-19 08:49:26.940 I/GED     (21992): ged_boost_gpu_freq, level 100, eOrigin 2, final_idx 2, oppidx_max 2, oppidx_min 0
+01-19 08:49:27.334 D/VRI[ScanDeviceListActivity](21992): dispatchAppVisibility visible:false
+01-19 08:49:27.365 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#85](f:0,a:1) destructor()
+01-19 08:49:27.365 D/BufferQueueConsumer(21992): [VRI[ScanDeviceListActivity]#85(BLAST Consumer)85](id:55e800000055,api:0,p:-1,c:21992) disconnect
+01-19 08:49:27.368 D/VRI[ScanDeviceListActivity](21992): setWindowStopped stopped:true
+01-19 08:49:27.373 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:49:27.374 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@fa3500d
+01-19 08:49:27.374 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:49:27.374 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@1fb3bc2
+01-19 08:49:27.377 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:49:28.410 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:49:28.411 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@b41e009
+01-19 08:49:28.411 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:49:28.412 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@d45520e
+01-19 08:49:28.416 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:49:28.424 D/BLASTBufferQueue(21992): [VRI[Toast]#86](f:0,a:1) destructor()
+01-19 08:49:28.424 D/BufferQueueConsumer(21992): [VRI[Toast]#86(BLAST Consumer)86](id:55e800000056,api:0,p:-1,c:21992) disconnect
+01-19 08:49:28.810 D/libMEOW (21992): meow new tls: 0xb400006fc45b2080
+01-19 08:49:28.810 D/libMEOW (21992): applied 1 plugins for [com.THLight.BLE.USBeacon.Writer.Simple.dev]:
+01-19 08:49:28.810 D/libMEOW (21992):   plugin 1: [libMEOW_gift.so]: 0xb400007035992880
+01-19 08:49:28.811 D/libMEOW (21992): rebuild call chain: 0xb400006fc45508c0
+01-19 08:49:28.812 D/libMEOW (21992): meow delete tls: 0xb400006fc45b2080
+01-19 08:49:28.957 D/libMEOW (21992): meow new tls: 0xb400006fccc813c0
+01-19 08:49:28.957 D/libMEOW (21992): applied 1 plugins for [com.THLight.BLE.USBeacon.Writer.Simple.dev]:
+01-19 08:49:28.957 D/libMEOW (21992):   plugin 1: [libMEOW_gift.so]: 0xb400007035992880
+01-19 08:49:28.958 D/libMEOW (21992): rebuild call chain: 0xb400006fccf93300
+01-19 08:49:28.959 D/libMEOW (21992): meow delete tls: 0xb400006fccc813c0
+01-19 08:49:28.997 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:28.998 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:28.998 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:29.007 I/System.out(21992): checkBtScanRequest step 3  
+01-19 08:49:29.041 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:29.041 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:29.041 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:29.051 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:29.051 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:29.052 I/oplus.android.OplusFrameworkFactoryImpl(21992): get feature:IOplusDynamicVsyncFeature
+01-19 08:49:29.072 D/WindowManager(21992): Add to mViews: DecorView@fd0ed85[ScanDeviceListActivity],pkg= com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:29.089 D/ViewRootImplExtImpl(21992): onDisplayChanged -1 for VRI android.view.ViewRootImpl@37dd01
+01-19 08:49:29.092 D/InputEventReceiver(21992): Input log is disabled
+01-19 08:49:29.104 D/WindowManager(21992): Add to mViews: DecorView@46c6983[ScanDeviceListActivity],pkg= com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:29.116 D/ViewRootImplExtImpl(21992): onDisplayChanged -1 for VRI android.view.ViewRootImpl@d021adf
+01-19 08:49:29.118 D/InputEventReceiver(21992): Input log is disabled
+01-19 08:49:29.122 I/Quality (21992): Skipped: false 1 cost 22.692385 refreshRate 16703302 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:29.140 D/BufferQueueConsumer(21992): [](id:55e800000057,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:49:29.141 E/IPCThreadState(21992): attemptIncStrongHandle(150): Not supported
+01-19 08:49:29.141 E/IPCThreadState(21992): attemptIncStrongHandle(153): Not supported
+01-19 08:49:29.141 E/IPCThreadState(21992): attemptIncStrongHandle(146): Not supported
+01-19 08:49:29.143 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.265350533
+01-19 08:49:29.148 D/VRI[ScanDeviceListActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:49:29.158 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#87](f:0,a:1) acquireNextBufferLocked size=812x360 mFrameNumber=1 applyTransaction=true mTimestamp=192519719297628(auto) mPendingTransactions.size=0 graphicBufferId=94454920774298 transform=0
+01-19 08:49:29.159 D/VRI[ScanDeviceListActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:49:29.160 W/Parcel  (21992): Expecting binder but got null!
+01-19 08:49:29.160 D/VRI[ScanDeviceListActivity](21992): draw finished.
+01-19 08:49:29.189 D/BufferQueueConsumer(21992): [](id:55e800000058,api:0,p:-1,c:21992) connect: controlledByApp=false
+01-19 08:49:29.191 V/ZoomWindowDecorView(21992): setLastReportedMergedConfiguration mZoomDisplayHeight: 1600 getDecorView.74213763
+01-19 08:49:29.196 D/VRI[ScanDeviceListActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:49:29.208 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#88](f:0,a:1) acquireNextBufferLocked size=720x1600 mFrameNumber=1 applyTransaction=true mTimestamp=192519768687859(auto) mPendingTransactions.size=0 graphicBufferId=94454920774303 transform=0
+01-19 08:49:29.208 D/VRI[ScanDeviceListActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+01-19 08:49:29.209 W/Parcel  (21992): Expecting binder but got null!
+01-19 08:49:29.209 D/VRI[ScanDeviceListActivity](21992): draw finished.
+01-19 08:49:29.213 D/BluetoothAdapter(21992): isLeEnabled(): ON
+01-19 08:49:29.218 D/BluetoothLeScanner(21992): onScannerRegistered() - status=0 scannerId=8 mScannerId=0
+01-19 08:49:29.229 I/Quality (21992): Skipped: false 4 cost 76.1748 refreshRate 16705457 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:29.231 D/VRI[ScanDeviceListActivity](21992): registerCallbacksForSync syncBuffer=false
+01-19 08:49:29.239 D/VRI[ScanDeviceListActivity](21992): Received frameCommittedCallback lastAttemptedDrawFrameNum=2 didProduceBuffer=true syncBuffer=false
+01-19 08:49:29.239 D/VRI[ScanDeviceListActivity](21992): draw finished.
+01-19 08:49:29.255 I/Quality (21992): Skipped: false 1 cost 18.827908 refreshRate 16706779 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:29.278 D/VRI[ScanDeviceListActivity](21992): onFocusEvent true
+01-19 08:49:34.094 D/OplusScrollToTopManager(21992): unregisterGuidePopupDismissReceiverInSystemUI
+01-19 08:49:34.095 D/OplusScrollToTopManager(21992): Receiver not registered: android.view.OplusScrollToTopManager$1@c79f71
+01-19 08:49:34.095 D/OplusScrollToTopManager(21992): unregisterSystemUIBroadcastReceiver 
+01-19 08:49:34.096 D/OplusScrollToTopManager(21992): java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@9f98156
+01-19 08:49:34.099 V/ZoomWindowDecorView(21992): removeZoomView
+01-19 08:49:34.110 D/BLASTBufferQueue(21992): [VRI[ScanDeviceListActivity]#87](f:0,a:1) destructor()
+01-19 08:49:34.111 D/BufferQueueConsumer(21992): [VRI[ScanDeviceListActivity]#87(BLAST Consumer)87](id:55e800000057,api:0,p:-1,c:21992) disconnect
+01-19 08:49:34.137 D/BluetoothAdapter(21992): isLeEnabled(): ON
+01-19 08:49:34.147 I/Quality (21992): Skipped: false 2 cost 48.751934 refreshRate 16713843 bit true processName com.THLight.BLE.USBeacon.Writer.Simple.dev
+01-19 08:49:34.154 I/System.out(21992): getItemTypeIndexByPosition -----> foreach 0 , position : 0 , preItemCount : 0 , count : 2 , itemType : 2
+01-19 08:49:34.161 I/System.out(21992): getItemTypeIndexByPosition -----> foreach 1 , position : 1 , preItemCount : 0 , count : 2 , itemType : 2
+01-19 08:49:34.171 D/VRI[ScanDeviceListActivity](21992): onFocusEvent true

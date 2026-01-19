@@ -1,15 +1,21 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <map>
-    <string name="SHARED_PREFERENCES_STRING_JSON_USER_ACCOUNT_LIST">[&quot;oppo&quot;]</string>
-    <string name="SHARED_PREFERENCES_STRING_LAST_ACCOUNT_UUID">6F70706F-3030-3030-6F70-706F30303030</string>
-    <int name="SHARED_PREFERENCES_STRING_INT_LAST_POSITION" value="0" />
-    <string name="SHARED_PREFERENCES_STRING_LAST_PASSWORD">0000</string>
-    <string name="SHARED_PREFERENCES_STRING_JSON_ACCOUNT_DATA">{&quot;account_uuid&quot;:&quot;6F70706F-3030-3030-6F70-706F30303030&quot;,&quot;beacon_uuid&quot;:&quot;111ECF31-BC01-4A24-BDBE-D84C042A4553&quot;,&quot;mbr_id&quot;:&quot;&quot;,&quot;dataquery_uuid&quot;:&quot;7C2A0F71-0A37-4D42-9C03-95A67838CDFC&quot;,&quot;status&quot;:&quot;&quot;}</string>
-    <string name="SHARED_PREFERENCES_STRING_LAST_QUERY_UUID">7C2A0F71-0A37-4D42-9C03-95A67838CDFC</string>
-    <string name="SHARED_PREFERENCES_STRING_JSON_USER_PASSWORD_LIST">[&quot;0000&quot;]</string>
-    <string name="SHARED_PREFERENCES_STRING_LAST_USER_ID">oppo</string>
-    <string name="SHARED_PREFERENCES_STRING_LAST_BEACON_UUID">111ECF31-BC01-4A24-BDBE-D84C042A4553</string>
+    <string name="SHARED_PREFERENCES_STRING_LAST_ACCOUNT_UUID">6F707069-6F70-7069-6F70-70696F707069</string>
+    <string name="SHARED_PREFERENCES_STRING_LAST_PASSWORD">oppi</string>
+    <string name="SHARED_PREFERENCES_STRING_LAST_USER_ID">oppi</string>
+    <string name="SHARED_PREFERENCES_STRING_LAST_BEACON_UUID">2D4ABCC5-F47E-435B-B463-40184C99218A</string>
+    <string name="SHARED_PREFERENCES_STRING_JSON_USER_ACCOUNT_LIST">[&quot;oppo&quot;,&quot;oppi&quot;]</string>
+    <boolean name="SHARED_PREFERENCES_BOOLEAN_FAST_SETTING" value="false" />
+    <int name="SHARED_PREFERENCES_INT_TX_POWER_LEVEL" value="-1" />
+    <string name="SHARED_PREFERENCES_STRING_BROADCAST_FREQUENCY"></string>
+    <int name="SHARED_PREFERENCES_STRING_INT_LAST_POSITION" value="1" />
+    <boolean name="SHARED_PREFERENCES_BOOLEAN_AES_SETTING" value="false" />
+    <string name="SHARED_PREFERENCES_STRING_JSON_ACCOUNT_DATA">{&quot;account_uuid&quot;:&quot;6F707069-6F70-7069-6F70-70696F707069&quot;,&quot;beacon_uuid&quot;:&quot;2D4ABCC5-F47E-435B-B463-40184C99218A&quot;,&quot;mbr_id&quot;:&quot;&quot;,&quot;dataquery_uuid&quot;:&quot;8AA88422-AD6F-40BD-871E-FA8B938A9E48&quot;,&quot;status&quot;:&quot;&quot;}</string>
+    <string name="SHARED_PREFERENCES_STRING_LAST_QUERY_UUID">8AA88422-AD6F-40BD-871E-FA8B938A9E48</string>
+    <string name="SHARED_PREFERENCES_STRING_MINOR_VALUE"></string>
+    <string name="SHARED_PREFERENCES_STRING_REST_TIME"></string>
+    <string name="SHARED_PREFERENCES_STRING_REST_BROADCAST_FREQUENCY"></string>
+    <string name="SHARED_PREFERENCES_STRING_JSON_USER_PASSWORD_LIST">[&quot;oppo&quot;,&quot;oppi&quot;]</string>
+    <string name="SHARED_PREFERENCES_STRING_LAST_MODIFIED_DATE">2026.01.19</string>
+    <string name="SHARED_PREFERENCES_STRING_MAJOR_VALUE"></string>
 </map>
-2+1 records in
-2+1 records out
-1166 bytes (1.1 K) copied, 0.000609 s, 1.8 M/s

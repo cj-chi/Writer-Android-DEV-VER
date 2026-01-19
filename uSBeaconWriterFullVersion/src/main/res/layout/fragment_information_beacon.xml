@@ -71,17 +71,29 @@
         android:textColor="#FFFFFF"
         android:textSize="12dp" />
 
-    <TextView
-        android:id="@+id/fragmentInformationBeacon_uuidTextView"
+    <EditText
+        android:id="@+id/fragmentInformationBeacon_uuidEditText"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="82dp"
         android:layout_marginTop="2dp"
         android:layout_weight="1"
+        android:background="@drawable/bg_uuid_input"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:gravity="center_vertical"
+        android:hint="UUID"
+        android:inputType="text"
+        android:maxLength="36"
+        android:minHeight="26dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:singleLine="true"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
         android:textSize="12dp" />
 
     <LinearLayout

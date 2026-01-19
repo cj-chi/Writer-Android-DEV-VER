@@ -4,9 +4,11 @@ import com.THLight.BLE.USBeacon.Writer.Simple.util.BytesUtil;
 import com.THLight.BLE.USBeacon.Writer.Simple.util.StringUtil;
 import com.google.gson.annotations.SerializedName;
 
+import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.io.Serializable;
+import java.util.UUID;
 
 public class AccountDataEntity implements Serializable {
 
@@ -109,6 +111,21 @@ public class AccountDataEntity implements Serializable {
             }
         }
         return BYTES_UUID;
+    }
+
+    public static byte[] parseUuidBytes(String uuidString) {
+        if (StringUtil.isEmpty(uuidString)) {
+            return null;
+        }
+        try {
+            UUID uuid = UUID.fromString(uuidString.trim());
+            ByteBuffer buffer = ByteBuffer.allocate(16);
+            buffer.putLong(uuid.getMostSignificantBits());
+            buffer.putLong(uuid.getLeastSignificantBits());
+            return buffer.array();
+        } catch (IllegalArgumentException e) {
+            return null;
+        }
     }
 
     private static String generateUuidFromCredentials(String account, String password, String purpose) {

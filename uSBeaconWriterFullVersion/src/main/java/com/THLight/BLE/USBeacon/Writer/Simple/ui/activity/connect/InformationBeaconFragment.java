@@ -62,7 +62,7 @@ public class InformationBeaconFragment extends BaseFragment implements OnClickLi
     private void bindContentView() {
         bindNameEditText();
         bindMacAddressEditText();
-        bindUuidTextView();
+        bindUuidEditText();
         bindMajorEditText();
         bindMinorEditText();
         bindBatterPowerView();
@@ -100,12 +100,12 @@ public class InformationBeaconFragment extends BaseFragment implements OnClickLi
         editText.setText(bluetoothDeviceItemEntity.getMacAddress());
     }
 
-    private void bindUuidTextView() {
+    private void bindUuidEditText() {
         if (getActivity() == null || getContentView() == null || bluetoothDeviceItemEntity == null) {
             return;
         }
-        TextView textView = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidTextView);
-        textView.setText(bluetoothDeviceItemEntity.getUuid());
+        EditText editText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidEditText);
+        editText.setText(bluetoothDeviceItemEntity.getUuid());
     }
 
     private void bindMajorEditText() {
@@ -219,6 +219,12 @@ public class InformationBeaconFragment extends BaseFragment implements OnClickLi
     protected int getMinorValue() {
         EditText editText = getContentView().findViewById(R.id.fragmentInformationBeacon_minorEditText);
         return checkMajorMinorValue(editText.getText().toString());
+    }
+
+    protected String getBeaconUuidValue() {
+        EditText editText = getContentView().findViewById(R.id.fragmentInformationBeacon_uuidEditText);
+        String value = editText.getText() == null ? "" : editText.getText().toString().trim();
+        return StringUtil.isEmpty(value) ? "" : value;
     }
 
     private int checkMajorMinorValue(String textString) { // 回傳前先檢查是否超出指定邊界

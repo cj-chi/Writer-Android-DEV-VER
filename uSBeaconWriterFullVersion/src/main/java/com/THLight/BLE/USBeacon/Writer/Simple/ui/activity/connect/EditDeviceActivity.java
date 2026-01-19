@@ -18,6 +18,7 @@ import com.THLight.BLE.USBeacon.Writer.Simple.ui.pager.BasePagerAdapter;
 import com.THLight.BLE.USBeacon.Writer.Simple.entity.beacon.BeaconProcessEntity;
 import com.THLight.BLE.USBeacon.Writer.Simple.entity.command.UsBeaconCommand;
 import com.THLight.BLE.USBeacon.Writer.Simple.entity.scan.BluetoothDeviceItemEntity;
+import com.THLight.BLE.USBeacon.Writer.Simple.entity.login.AccountDataEntity;
 import com.THLight.BLE.USBeacon.Writer.Simple.helper.SendBroadcastHelper;
 import com.THLight.BLE.USBeacon.Writer.Simple.manager.BluetoothConnectDeviceManager;
 import com.THLight.BLE.USBeacon.Writer.Simple.manager.BluetoothConnectDeviceManager.CommandType;
@@ -136,6 +137,9 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
                 break;
             case UsBeaconCommand.CMD_R_REMOTE_ID:
                 readRemoteId(data);
+                break;
+            case UsBeaconCommand.CMD_R_BEACON_UUID:
+                readBeaconUuid(data);
                 break;
             case UsBeaconCommand.CMD_GET_INFO:
                 readDeviceInformation(data);
@@ -263,6 +267,10 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
         entity.setMinor("0");
     }
 
+    private void readBeaconUuid(byte[] data) { // 命令 (CMD_R_BEACON_UUID) Callback , 得到 beacon UUID
+        entity.setUuid(BeaconProcessEntity.getBeaconUuid(data));
+    }
+
     private void readDeviceInformation(byte[] data) { //  命令 (CMD_GET_INFO) Callback , 得到 beacon 韌體版本和電量
         entity.setFirmWare(BeaconProcessEntity.getFirmwareVersion(data));
         entity.setBatteryPower(BeaconProcessEntity.getBatteryPower(data));
@@ -362,16 +370,19 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
         switch (entity.getDeviceType()) {
             case REMOTE_TYPE_BEACON:
                 BluetoothConnectDeviceManager.getInstance().addCommandToQueue(
-                        UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_R_REMOTE_ID));
+                        UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_R_REMOTE_ID),
+                        UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_R_BEACON_UUID));
             case PROX_TYPE_BEACON:
                 BluetoothConnectDeviceManager.getInstance().addCommandToQueue(
                         UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_R_ADV_INFO),
+                        UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_R_BEACON_UUID),
                         UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_GET_INFO),
                         UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_R_TX_POWER));
                 break;
             default:
                 BluetoothConnectDeviceManager.getInstance().addCommandToQueue(
                         UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_R_ADVERTISE_PER_SECOND),
+                        UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_R_BEACON_UUID),
                         UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_GET_INFO),
                         UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_R_TX_POWER));
                 if (entity.getDeviceType() == ORIGINAL_TYPE_BEACON) {
@@ -455,9 +466,31 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
     }
 
     private void onSaveButtonClick() { // 確定修改資料至beacon
+        String uuidError = validateBeaconUuidInput();
+        if (!StringUtil.isEmpty(uuidError)) {
+            toastMessageView(this, uuidError);
+            return;
+        }
         showCustomDialog(R.drawable.ic_usbeacon, "USBeacon Writer",
                 getString(R.string.save_warning), false,
                 (dialog, which) -> startUpdateDataToBeacon());
+    }
+
+    private String validateBeaconUuidInput() {
+        if (getInformationBeaconFragment() == null) {
+            return null;
+        }
+        String uuid = getInformationBeaconFragment().getBeaconUuidValue();
+        if (StringUtil.isEmpty(uuid)) {
+            return null;
+        }
+        if (uuid.length() != 36) {
+            return "UUID 長度需為 36（含 4 個 '-'）";
+        }
+        if (!uuid.matches("^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")) {
+            return "UUID 格式錯誤，需為 8-4-4-4-12 的 16 進位";
+        }
+        return null;
     }
 
     /*
@@ -511,7 +544,14 @@ public class EditDeviceActivity extends BaseActivity implements MessageAckListen
     }
 
     private void updateBeaconUuidCommand() {  // 將 自己的 beacon uuid 複寫到裝置上
-        byte[] beaconUuidBytes = LoginManager.getInstance().getAccountDataEntity().generateBeaconUuid();
+        String customUuid = getInformationBeaconFragment().getBeaconUuidValue();
+        byte[] beaconUuidBytes = null;
+        if (!StringUtil.isEmpty(customUuid)) {
+            beaconUuidBytes = AccountDataEntity.parseUuidBytes(customUuid);
+        }
+        if (beaconUuidBytes == null) {
+            beaconUuidBytes = LoginManager.getInstance().getAccountDataEntity().generateBeaconUuid();
+        }
         BluetoothConnectDeviceManager.getInstance().addCommandToQueue(
                 UsBeaconCommand.genCmdData(UsBeaconCommand.CMD_W_BEACON_UUID, beaconUuidBytes));
     }

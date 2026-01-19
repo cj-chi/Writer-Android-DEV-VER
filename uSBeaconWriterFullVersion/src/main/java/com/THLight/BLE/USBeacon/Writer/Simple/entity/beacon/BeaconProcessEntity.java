@@ -52,6 +52,19 @@ public class BeaconProcessEntity {
         return  (((dataBuf[4] << 8) & 0x00FF00) | (dataBuf[3] & 0x00FF));
     }
 
+    public static String getBeaconUuid(byte[] dataBuf) {
+        if (dataBuf == null || dataBuf.length < 16) {
+            return "";
+        }
+        byte[] uuidBytes = Arrays.copyOfRange(dataBuf, 0, 16);
+        String hex = BytesUtil.getHexString(uuidBytes);
+        return hex.substring(0, 8) + "-"
+                + hex.substring(8, 12) + "-"
+                + hex.substring(12, 16) + "-"
+                + hex.substring(16, 20) + "-"
+                + hex.substring(20, 32);
+    }
+
     /**
      * ================================================
      */

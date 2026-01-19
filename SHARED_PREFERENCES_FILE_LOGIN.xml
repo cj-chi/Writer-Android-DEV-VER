@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="SHARED_PREFERENCES_STRING_JSON_USER_ACCOUNT_LIST">[&quot;oppo&quot;]</string>
+    <string name="SHARED_PREFERENCES_STRING_LAST_ACCOUNT_UUID">6F70706F-3030-3030-6F70-706F30303030</string>
+    <int name="SHARED_PREFERENCES_STRING_INT_LAST_POSITION" value="0" />
+    <string name="SHARED_PREFERENCES_STRING_LAST_PASSWORD">0000</string>
+    <string name="SHARED_PREFERENCES_STRING_JSON_ACCOUNT_DATA">{&quot;account_uuid&quot;:&quot;6F70706F-3030-3030-6F70-706F30303030&quot;,&quot;beacon_uuid&quot;:&quot;111ECF31-BC01-4A24-BDBE-D84C042A4553&quot;,&quot;mbr_id&quot;:&quot;&quot;,&quot;dataquery_uuid&quot;:&quot;7C2A0F71-0A37-4D42-9C03-95A67838CDFC&quot;,&quot;status&quot;:&quot;&quot;}</string>
+    <string name="SHARED_PREFERENCES_STRING_LAST_QUERY_UUID">7C2A0F71-0A37-4D42-9C03-95A67838CDFC</string>
+    <string name="SHARED_PREFERENCES_STRING_JSON_USER_PASSWORD_LIST">[&quot;0000&quot;]</string>
+    <string name="SHARED_PREFERENCES_STRING_LAST_USER_ID">oppo</string>
+    <string name="SHARED_PREFERENCES_STRING_LAST_BEACON_UUID">111ECF31-BC01-4A24-BDBE-D84C042A4553</string>
+</map>
+2+1 records in
+2+1 records out
+1166 bytes (1.1 K) copied, 0.000609 s, 1.8 M/s

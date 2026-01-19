@@ -1,0 +1,10 @@
+PATHS (local machine)
+
+Workspace:
+/Users/cj/我的雲端硬碟/USBeaconWriter-master_2025
+
+Android SDK:
+/Users/cj/Library/Android/sdk
+
+adb:
+/Users/cj/Library/Android/sdk/platform-tools/adb

@@ -131,12 +131,12 @@ public class ScanDeviceListActivity extends BaseActivity implements CustomRecycl
             System.out.println("checkBtScanRequest step 2  ");
             RequestPermissionHelper.requestLocationSettingEnable(this);
         } else { // check location permission
-            if (RequestPermissionHelper.hasRequiredScanPermissions(this)) {
+            if (RequestPermissionHelper.hasRequiredScanPermissions(this) && RequestPermissionHelper.hasLocationPermission(this)) {
                 System.out.println("checkBtScanRequest step 3  ");
                 requestScanDeviceTask();
             } else {
                 System.out.println("checkBtScanRequest step 4  ");
-                RequestPermissionHelper.requestRequiredScanPermissions(this);
+                RequestPermissionHelper.requestAllScanPermissions(this);
             }
         }
     }

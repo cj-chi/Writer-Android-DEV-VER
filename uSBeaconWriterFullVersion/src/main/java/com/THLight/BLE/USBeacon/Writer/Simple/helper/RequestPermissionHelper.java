@@ -91,6 +91,10 @@ public class RequestPermissionHelper {
         ActivityCompat.requestPermissions(weakReference.get(), new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_CODE_PERMISSION);
     }
 
+    public static boolean hasLocationPermission(Context context) {
+        return checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION);
+    }
+
     public static boolean hasRequiredScanPermissions(Context context) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             return checkSelfPermission(context, Manifest.permission.BLUETOOTH_SCAN, Manifest.permission.BLUETOOTH_CONNECT);
@@ -104,6 +108,23 @@ public class RequestPermissionHelper {
             ActivityCompat.requestPermissions(
                     weakReference.get(),
                     new String[]{Manifest.permission.BLUETOOTH_SCAN, Manifest.permission.BLUETOOTH_CONNECT},
+                    REQUEST_CODE_BLUETOOTH_PERMISSION);
+        } else {
+            requestLocationPermission(activity);
+        }
+    }
+
+    public static void requestAllScanPermissions(Activity activity) {
+        WeakReference<Activity> weakReference = new WeakReference<>(activity);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            ActivityCompat.requestPermissions(
+                    weakReference.get(),
+                    new String[]{
+                            Manifest.permission.BLUETOOTH_SCAN,
+                            Manifest.permission.BLUETOOTH_CONNECT,
+                            Manifest.permission.ACCESS_COARSE_LOCATION,
+                            Manifest.permission.ACCESS_FINE_LOCATION
+                    },
                     REQUEST_CODE_BLUETOOTH_PERMISSION);
         } else {
             requestLocationPermission(activity);
